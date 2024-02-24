@@ -230,3 +230,26 @@ div#transactionTable_info {
     border-radius: 0px;
     
 }
+.square{
+    width: 225px;
+    height: 206px;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+}
+.square p{
+    padding-top: 67px;
+}
+.colorYellow{
+    background: #FFEB38;
+}
+.colorBlue{
+    background: #2563EB;
+}
+.colorRed{
+    background: #FF2828;
+}
+.colorOrange{
+    background: #FF9010;
+}
