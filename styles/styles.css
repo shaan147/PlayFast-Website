@@ -83,7 +83,8 @@ div#transactionTable_info {
     background: none;
     padding-left: 10px;
 }
-#btn-back-to-top {
+#back-top {
+    display: none;
     background-color: #FFCA00;
     border: none;
     border-radius: 50%;
@@ -91,7 +92,6 @@ div#transactionTable_info {
     bottom: 85px;
     left: 49%;
     padding: 9px 14px;
-    display: block;
   }
 .navbarlogo{
     width: 63px;
@@ -104,16 +104,24 @@ div#transactionTable_info {
     padding-left: 122px;
     padding-right: 122px;
 }
-@media (max-width: 650px){
-    .padding-122{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-    .width-50{
-        width: 90% !important;
-    }
+.mb-50{
+    margin-bottom: 80px !important;
 }
-
+.mb-150{
+    margin-bottom: 150px !important;
+}
+.px-150{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.size150{
+    font-size: 60px;
+}
+.active {
+    text-decoration: underline;
+    text-underline-offset: 0.3em; /* adjust as needed */
+    text-decoration-skip-ink: none; /* or 'auto' depending on your preference */
+}
 .navbar {
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 0.5rem;
@@ -283,4 +291,40 @@ div#transactionTable_info {
 }
 .borderGrey{
     border: 1px solid #D1D5DB;
+}
+
+@media (max-width: 650px){
+    .padding-122{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .width-50{
+        width: 90% !important;
+    }
+    .col-6{
+        width: 100% !important;
+        padding: 50px;
+    }
+    .fixImage{
+        width: 100%;
+        height: 200px;
+    }
+    #back-top {
+        left: 45% !important;
+        bottom: 95px;
+    }
+    .col-4{
+        width: 100% !important;
+        padding: 50px;
+    }
+    .px-150{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .size150{
+        font-size: 29px;
+    }
+    .mb-150{
+        margin-bottom: 30px !important;
+    }
 }
