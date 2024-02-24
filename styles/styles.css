@@ -109,7 +109,11 @@ div#transactionTable_info {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
+    .width-50{
+        width: 90% !important;
+    }
 }
+
 .navbar {
     --bs-navbar-padding-x: 0;
     --bs-navbar-padding-y: 0.5rem;
@@ -252,4 +256,31 @@ div#transactionTable_info {
 }
 .colorOrange{
     background: #FF9010;
+}
+
+.highcharts-credits {
+    display: none !important;
+}
+.backgroundYellow{
+    background: #ffca00;
+}
+.medium22{
+    font-size: 18px;
+    font-weight: 500;
+}
+.padding7{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    
+}
+.CustomHr{
+    margin: 0.5rem 0rem;
+    opacity: 1;
+    color: #ffffff;
+}
+.modal-header{
+    border-bottom: 1px solid white;
+}
+.borderGrey{
+    border: 1px solid #D1D5DB;
 }
