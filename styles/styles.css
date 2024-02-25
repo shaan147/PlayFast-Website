@@ -303,7 +303,10 @@ div#transactionTable_info {
     }
     .col-6{
         width: 100% !important;
-        padding: 50px;
+        padding: 32px;
+    }
+    .col-6 p{
+        text-align: center;
     }
     .fixImage{
         width: 100%;
@@ -327,4 +330,26 @@ div#transactionTable_info {
     .mb-150{
         margin-bottom: 30px !important;
     }
+    .rowreverse{
+        flex-direction: column-reverse;
+    }
+    .pading0{
+        padding-top: 0px;
+    }
+    .padingb0{
+        padding-bottom: 0px;
+    }
+    .txenter{
+        text-align: center !important;
+        align-items: center !important;
+    }
+    #notshow{
+        display: none;
+    }
+    #showhide{
+        display: block !important;
+    }
+}
+.width-50fix{
+    width: 50%;
 }

@@ -51,9 +51,19 @@
           <li class="nav-item">
             <a class=" btn btn-primary px-3" href="#">Join Now</a>
           </li>
+          <li class="nav-item dropdown d-none" id="showhide">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="coloryellow">ENG</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Spanish</a></li>
+              <!-- <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
         </ul>
       </div>
-      <div class="float-end">
+      <div class="float-end" id="notshow">
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="coloryellow">ENG</span>
@@ -80,18 +90,18 @@
 
   <!-- setion start  -->
   <div class="backgroundYellow p-xxl-5 mb-3">
-    <div class="row justify-content-center align-items-center mb-50">
-      <div class="col-6">
+    <div class="row justify-content-center align-items-center mb-50 rowreverse">
+      <div class="col-6 padingb0">
         <p>Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque scelerisque mi non urna condimentum, nec commodo massa euismod</p>
       </div>
-      <div class="col-6">
+      <div class="col-6 ">
         <div class="mx-auto text-center">
           <img src="../images/section1.png" class="fixImage" alt="">
         </div>
       </div>
     </div>
-    <div class="row justify-content-center align-items-center my-5">
-      <div class="col-6">
+    <div class="row justify-content-center align-items-center my-5 ">
+      <div class="col-6 pading0">
         <div class="mx-auto text-center">
           <img src="../images/section2.png" class="fixImage" alt="">
         </div>
@@ -118,10 +128,10 @@
     <div class="col-6 px-0">
       <form class="col-8 me-auto ms-auto px-0">
         <div class="row mb-4">
-          <div class="col-6">
+          <div class="width-50fix">
             <input type="text" class="form-control poppines" id="firstName" placeholder="First Name">
           </div>
-          <div class="col-6">
+          <div class="width-50fix">
             <input type="text" class="form-control poppines" id="lastName" placeholder="Last Name">
           </div>
         </div>
@@ -136,7 +146,7 @@
         </div>
         <textarea name="yourMessage" class="form-control poppines" id="yourMessage" placeholder="Your Message" cols="30" rows="6"></textarea>
 
-        <div class="text-start my-5">
+        <div class="text-start my-5 txenter">
           <!-- Added text-center class -->
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
