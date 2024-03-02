@@ -161,6 +161,9 @@ div#transactionTable_info {
 .width-50 {
     width: 50%;
 }
+.width-55 {
+    width: 45%;
+}
 
 .width-60 {
     width: 60%;
@@ -198,6 +201,12 @@ div#transactionTable_info {
 
     margin-bottom: 1rem;
 }
+.login-form-control1 {
+    border: none;
+    border-bottom: 1px solid #ffffff; /* Underline style */
+
+    margin-bottom: 1rem;
+}
 .form-control{
     border-radius: 0;
 }
@@ -210,6 +219,10 @@ div#transactionTable_info {
 .login-form-control:focus {
     box-shadow: none;
     border-color: #80bdff;
+}
+.login-form-control1:focus {
+    box-shadow: none;
+    border-color: #ffffff;
 }
 .btn{
     border-radius: 0px;
@@ -419,3 +432,9 @@ div#transactionTable_info {
     font-weight: 600;
     font-size: 18px;
   }
+.modal-backdrop {
+    z-index: 999999 !important;
+}
+.modal {
+    --bs-modal-zindex: 1055999 !important;
+}
