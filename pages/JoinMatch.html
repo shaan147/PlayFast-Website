@@ -18,17 +18,17 @@
   <link rel="icon" type="image/png" sizes="16x16" href=" ../images/favicon-16x16.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="manifest" href=" ../images/site.webmanifest">
-<style>
-  .hoverEffect:hover{
-    color: #3b3b3b;
+  <style>
+    .hoverEffect:hover {
+      color: #3b3b3b;
 
-  }
-</style>
+    }
+  </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-  
+
   <!-- Sidebar -->
   <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
@@ -111,74 +111,89 @@
 
   <main style=" margin-bottom: 80px;">
     <div class="row d-flex flex-row">
-    <div class="container pt-4">
-  <!-- setion start  -->
+      <div class="container pt-4">
+        <!-- setion start  -->
 
-  
 
-    <div class="pt-5 col-9">
-      <div class="row align-items-center mb-4">
-        <div class="col-5">
-          <p class="mb-1 medium22 text-left">Court loc 2</p>
-          <p class="colorgrey50 text-left width-40 mb-1">Outdoor 6 vs 6</p>
-          <p class="mb-0 medium22 text-left">Monday,10 September at 19:00</p>
+
+        <div class="pt-5 col-9">
+          <div class="row align-items-center mb-4">
+            <div class="table-responsive overflox-x-hidden">
+              <table class="table" id="transactionTable">
+                <tbody>
+                  <tr class="colorgrey50 d-flex mb-4">
+                    <td class=" align-items-center justify-content-center w-50 width-200px"> Court loc 2
+                      <p class=" mb-0 medium22">Outdoor 6 vs 6</p>
+                      <p class="mb-0">Monday,10 September at 19:00</p>
+                    </td>
+                
+            
+                    <td class="d-flex align-items-center justify-content-center w-50"> <img src="../images/court.png" alt=""></td>
+                  </tr>
+         
+
+                </tbody>
+              </table>
+            </div>
+
           </div>
-          
-          <div class="col-2 text-center">
+          <div class="row mt-5 px-5 padding-0">
+            <div class="table-responsive overflox-x-hidden">
+              <table class="table" id="transactionTable">
+                <tbody>
+                  <tr class="colorgrey50 d-flex mb-4">
+                    <td class=" align-items-center justify-content-center w-25 text-end width-100px"> <img src="../images/Avatar Image-1.png" alt=""></td>
+                    <td class="d-flex align-items-center  width-30 width-40-reponsive">
+                      <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p>
+                    </td>
+                    <td class="d-flex align-items-center justify-content-center w-25">
+                      <p class="mb-0">15 DT/15DT</p>
+                    </td>
+                  </tr>
+                  <tr class="colorgrey50 d-flex mb-4">
+                    <td class=" align-items-center justify-content-center w-25 text-end width-100px"> <img src="../images/Avatar Image-2.png" alt=""></td>
+                    <td class="d-flex align-items-center  width-30 width-40-reponsive">
+                      <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p>
+                    </td>
+                    <td class="d-flex align-items-center justify-content-center w-25">
+                      <p class="mb-0">15 DT/15DT</p>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
           </div>
-        <div class="col-4 text-end">
-          <img src="../images/court.png" alt="">
+          <hr>
+          <div class="row p-5">
+
+            <div class="col-9 me-5">
+              <input type="text" class="form-control login-form-control" id="code" placeholder="Promo code">
+
+            </div>
+
+            <div class="col-2">
+              <button class="float-end px-5 py-2  borderGrey bg-transparent" style="font-size: 16px; font-weight: 500;">Add</button>
+            </div>
+          </div>
+          <hr>
+          <div class="row p-4 mb-5">
+            <div class="col-12 text-center">
+              <a href="" class="btn btn-primary">Play</a>
+            </div>
+          </div>
+
+
+
         </div>
-      </div>
-      <div class="row mt-5 px-5">
-        <div class="table-responsive">
-          <table class="table" id="transactionTable">
-            <tbody>
-              <tr class="colorgrey50 d-flex mb-4">
-                <td class=" align-items-center justify-content-center w-25 text-end">       <img src="../images/Avatar Image-1.png" alt=""></td>
-                <td class="d-flex align-items-center  width-30">  <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p></td>
-                <td class="d-flex align-items-center justify-content-center w-25">  <p class="mb-0">15 DT/15DT</p></td>
-              </tr>
-              <tr class="colorgrey50 d-flex mb-4">
-                <td class=" align-items-center justify-content-center w-25 text-end">       <img src="../images/Avatar Image-2.png" alt=""></td>
-                <td class="d-flex align-items-center  width-30">  <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p></td>
-                <td class="d-flex align-items-center justify-content-center w-25">  <p class="mb-0">15 DT/15DT</p></td>
-              </tr>
-   
-            </tbody>
-          </table>
-        </div>
-      </div>
-  <hr>
-  <div class="row p-5">
 
-    <div class="col-9 me-5">
-      <input type="text" class="form-control login-form-control" id="code"  placeholder="Promo code">
-  
-    </div>
-    
-    <div class="col-2">
-     <button class="float-end px-5 py-2  borderGrey bg-transparent" style="font-size: 16px; font-weight: 500;">Add</button>
-    </div>
-  </div>
-  <hr>
-  <div class="row p-4 mb-5">
-    <div class="col-12 text-center">
-     <a href="" class="btn btn-primary">Play</a>
-    </div>
-  </div>
-    
+
 
 
       </div>
-
-
-
-
     </div>
-  </div>
-</div>
-</main>
+    </div>
+  </main>
 
   <!-- setion end  -->
 
