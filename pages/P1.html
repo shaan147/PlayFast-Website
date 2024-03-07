@@ -23,61 +23,71 @@
       color: #3b3b3b;
 
     }
+
     /* Hide the default radio button */
-input[type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    -ms-appearance: none;
-}
+    input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      -ms-appearance: none;
+    }
 
-/* Create custom radio button */
-input[type="radio"]:before {
-    content: '';
-    display: inline-block;
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    border: 2px solid #d1d5db; /* Set the border color to yellow */
-}
+    /* Create custom radio button */
+    input[type="radio"]:before {
+      content: '';
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      border: 2px solid #d1d5db;
+      /* Set the border color to yellow */
+    }
 
-/* Adjust appearance when radio button is checked */
-input[type="radio"]:checked:before {
-  border: 2px solid #ffca00; 
-    background-color: #ffca00; /* Set the background color to yellow when checked */
-    
-}
-/* Hide the default checkbox */
-input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    -ms-appearance: none;
-}
+    /* Adjust appearance when radio button is checked */
+    input[type="radio"]:checked:before {
+      border: 2px solid #ffca00;
+      background-color: #ffca00;
+      /* Set the background color to yellow when checked */
 
-/* Custom checkbox */
-input[type="checkbox"]::before {
-    content: '\2713'; /* Unicode character for checkmark */
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    border: 2px solid white; /* Border color */
-    border-radius: 4px;
-    background-color: #ffffff; /* Background color when checked */
-    color: rgb(255, 255, 255); /* Color of the checkmark */
+    }
+
+    /* Hide the default checkbox */
+    input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      -ms-appearance: none;
+    }
+
+    /* Custom checkbox */
+    input[type="checkbox"]::before {
+      content: '\2713';
+      /* Unicode character for checkmark */
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      border: 2px solid white;
+      /* Border color */
+      border-radius: 4px;
+      background-color: #ffffff;
+      /* Background color when checked */
+      color: rgb(255, 255, 255);
+      /* Color of the checkmark */
 
 
-}
+    }
 
-/* Adjust appearance when checkbox is checked */
-input[type="checkbox"]:checked::before {
-    background-color: #ffca00; /* Background color when checked */
-    color: rgb(0, 0, 0); /* Color of the checkmark */
-}
+    /* Adjust appearance when checkbox is checked */
+    input[type="checkbox"]:checked::before {
+      background-color: #ffca00;
+      /* Background color when checked */
+      color: rgb(0, 0, 0);
+      /* Color of the checkmark */
+    }
   </style>
 </head>
 
@@ -168,18 +178,27 @@ input[type="checkbox"]:checked::before {
     <div class="row d-flex flex-row">
       <div class="container pt-4">
         <!-- setion start  -->
-        <div class="pt-5 col-9">
-          <div class="row align-items-center mb-5">
-            <div class="col-5">
-              <p class="mb-1 medium22 text-left">Court loc 2</p>
-              <p class="colorgrey50 text-left width-40 mb-1">Outdoor 6 vs 6</p>
-              <p class="mb-0 medium22 text-left">Monday,10 September at 19:00</p>
+        <div class="pt-5 col-9 width85fic">
+          <div class="row align-items-center mb-4">
+            <div class="table-responsive overflox-x-hidden">
+              <table class="table" id="transactionTable">
+                <tbody>
+                  <tr class="colorgrey50 d-flex mb-4">
+                    <td class=" align-items-center justify-content-center w-50 width-200px"> Court loc 2
+                      <p class=" mb-0 medium22">Outdoor 6 vs 6</p>
+                      <p class="mb-0">Monday,10 September at 19:00</p>
+                    </td>
+
+
+                    <td class="d-flex align-items-center justify-content-center w-50"> <img src="../images/court.png" alt=""></td>
+                  </tr>
+
+
+                </tbody>
+              </table>
             </div>
-            <div class="col-2 text-center">
-            </div>
-            <div class="col-4 text-end">
-              <img src="../images/court.png" alt="">
-            </div>
+
+
           </div>
           <hr>
           <div class="px-5 py-4">
@@ -187,64 +206,78 @@ input[type="checkbox"]:checked::before {
               <input type="radio" id="payment" name="payment" style="width: 19px; height: 19px;">
               <label for="payment" class="ps-4" style="font-size: 18px; font-weight: 600; padding-left: 20px !important;">Pay by credit card</label>
               <p class="ps-4 colorgrey50 text-decoration-underline pt-3" style="margin: 0; padding-left: 40px !important;">Immediate confirmation of participation</p>
-          </div>
-          <div class="mb-5">
-            <input type="radio" id="payment" name="payment" style="width: 19px; height: 19px;">
-            <label for="payment" class="ps-4" style="font-size: 18px; font-weight: 600; padding-left: 20px !important;">Pay in advance at PlayFast stadium/office</label>
-            <p class="ps-4 colorgrey50 text-decoration-underline pt-3" style="margin: 0; padding-left: 40px !important;">Only available before at least 48 hours from match start time</p>
-        </div>
-        <div class="mb-5">
-          <input type="radio" id="payment" name="payment" style="width: 19px; height: 19px;">
-          <label for="payment" class="ps-4" style="font-size: 18px; font-weight: 600; padding-left: 20px !important;">Pay in full from your account balance</label>
-          <p class="ps-4 colorgrey50 text-decoration-underline pt-3" style="margin: 0; padding-left: 40px !important;">Immediate confirmation of participation</p>
-      </div>
-      <div class="row p-4">
-        <div class="col-12 text-center">
-         <a  class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Pay</a>
-        </div>
-      </div>
+            </div>
+            <div class="mb-5">
+              <input type="radio" id="payment" name="payment" style="width: 19px; height: 19px;">
+              <label for="payment" class="ps-4" style="font-size: 18px; font-weight: 600; padding-left: 20px !important;">Pay in advance at PlayFast stadium/office</label>
+              <p class="ps-4 colorgrey50 text-decoration-underline pt-3" style="margin: 0; padding-left: 40px !important;">Only available before at least 48 hours from match start time</p>
+            </div>
+            <div class="mb-5">
+              <input type="radio" id="payment" name="payment" style="width: 19px; height: 19px;">
+              <label for="payment" class="ps-4" style="font-size: 18px; font-weight: 600; padding-left: 20px !important;">Pay in full from your account balance</label>
+              <p class="ps-4 colorgrey50 text-decoration-underline pt-3" style="margin: 0; padding-left: 40px !important;">Immediate confirmation of participation</p>
+            </div>
+            <div class="row p-4">
+              <div class="col-12 text-center">
+                <a class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Pay</a>
+              </div>
+            </div>
 
-        
+
 
           </div>
           <hr>
           <h4 class="mb-1 text-left pt-5">Order details</h4>
-          <div class="row mt-5 px-5">
+          <div class="row mt-5 px-5 px-fix-res">
 
             <div class="table-responsive">
               <table class="table" id="transactionTable">
                 <tbody>
                   <tr class="colorgrey50 d-flex mb-4">
-                    <td class=" align-items-center justify-content-center w-25 text-end">       <img src="../images/Avatar Image-1.png" alt=""></td>
-                    <td class="d-flex align-items-center  width-30">  <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p></td>
-                    <td class="d-flex align-items-center justify-content-center w-25">  <p class="mb-0">15 DT/15DT</p></td>
+                    <td class=" align-items-center justify-content-center w-25 text-end width-100px"> <img src="../images/Avatar Image-1.png" alt=""></td>
+                    <td class="d-flex align-items-center  width-30 width45fix-res">
+                      <p class="ms-4 mb-0 medium22 text-left width-40-reponsive">Michael Johnson</p>
+                    </td>
+                    <td class="d-flex align-items-center justify-content-center w-25">
+                      <p class="mb-0">15 DT/15DT</p>
+                    </td>
                   </tr>
                   <tr class="colorgrey50 d-flex mb-4">
-                    <td class=" align-items-center justify-content-center w-25 text-end">       <img src="../images/Avatar Image-2.png" alt=""></td>
-                    <td class="d-flex align-items-center  width-30">  <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p></td>
-                    <td class="d-flex align-items-center justify-content-center w-25">  <p class="mb-0">15 DT/15DT</p></td>
+                    <td class=" align-items-center justify-content-center w-25 text-end width-100px"> <img src="../images/Avatar Image-2.png" alt=""></td>
+                    <td class="d-flex align-items-center  width-30 width45fix-res">
+                      <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p>
+                    </td>
+                    <td class="d-flex align-items-center justify-content-center w-25">
+                      <p class="mb-0">15 DT/15DT</p>
+                    </td>
                   </tr>
                   <tr class="colorgrey50 d-flex mb-4">
                     <td class=" align-items-center justify-content-center width-10 text-end"> </td>
                     <td class="d-flex align-items-center  width-55"> <input type="text" class="form-control bg-transparent login-form-control " placeholder="Code promo:X594HY3"> </td>
-                    <td class="d-flex align-items-center justify-content-center w-25">  <p class="mb-0">-5 DT</p></td>
+                    <td class="d-flex align-items-center justify-content-center w-25">
+                      <p class="mb-0">-5 DT</p>
+                    </td>
                   </tr>
                   <tr class="colorgrey50 d-flex mb-4">
                     <td class=" align-items-center justify-content-center width-10 text-end"> </td>
                     <td class="d-flex align-items-center  width-55"> <input type="text" class="form-control bg-transparent login-form-control " placeholder="Account credit"> </td>
-                    <td class="d-flex align-items-center justify-content-center w-25">  <p class="mb-0">-10 DT</p></td>
+                    <td class="d-flex align-items-center justify-content-center w-25">
+                      <p class="mb-0">-10 DT</p>
+                    </td>
                   </tr>
                   <tr class="colorgrey50 d-flex mb-4">
-                    <td class=" align-items-center justify-content-center w-25 text-end">      </td>
-                    <td class="d-flex align-items-center  width-30">  </td>
-                    <td class="d-flex align-items-center justify-content-center w-25">  <p class="mb-0 medium22">Total: 15DT</p></td>
+                    <td class=" align-items-center justify-content-center w-25 text-end"> </td>
+                    <td class="d-flex align-items-center  width-30"> </td>
+                    <td class="d-flex align-items-center justify-content-center w-25">
+                      <p class="mb-0 medium22">Total: 15DT</p>
+                    </td>
                   </tr>
                 </tbody>
               </table>
 
             </div>
           </div>
-         
+
         </div>
       </div>
     </div>
@@ -263,19 +296,19 @@ input[type="checkbox"]:checked::before {
           </div>
           <div class="modal-body px-5 text-center mb-2 border-0">
             <p class="mb-1">You have chosen 25DT through your account balance</p>
-          <input type="checkbox" name="check" id="check"> <span class="text-decoration-underline ps-2">Accept our terms and conditions</span>
-        </div>
-        <div class="modal-footer justify-content-end border-0">
-          <a href="" class="text-black pe-1" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
-          <a href="P2.html" class="text-white">Yes</a>
-        </div>
-      </form>
+            <input type="checkbox" name="check" id="check"> <span class="text-decoration-underline ps-2">Accept our terms and conditions</span>
+          </div>
+          <div class="modal-footer justify-content-end border-0">
+            <a href="" class="text-black pe-1" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
+            <a href="P2.html" class="text-white">Yes</a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-  
 
-<!-- Modal End  4 -->
+
+  <!-- Modal End  4 -->
 
 
   <!-- back to top  -->

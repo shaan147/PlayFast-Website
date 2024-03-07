@@ -468,6 +468,27 @@ div#transactionTable_info {
     .width60percent{
         width: 55% !important;
     }
+    .fixedonresponsive{
+        font-size: 11px;
+        text-align: left !important;
+        width: 60% !important;
+    }
+    .fontsetresponsive{
+        font-size: 12px;
+    }
+    .width85fic{
+        width: 85% !important;
+    }
+    .px-fix-res{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .width45fix-res{
+        width: 45% !important;
+    }
+    .width95fix{
+        width: 95% !important;
+    }
     
 }
 
