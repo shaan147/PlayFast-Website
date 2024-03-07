@@ -88,7 +88,7 @@ input[type="checkbox"]:checked::before {
   <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
       <div class="list-group list-group-flush mx-3 mt-4">
-        <a href="Signin.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
+        <a href="Profile.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
           <i class="fa fa-user fa-2x mb-2"></i>
           <h5>My account</h5>
         </a>
@@ -96,7 +96,7 @@ input[type="checkbox"]:checked::before {
           <i class="fa fa-gamepad fa-2x mb-2"></i>
           <h5>Games</h5>
         </a>
-        <a href="#" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
+        <a href="Settings.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
           <i class="fa fa-gear fa-2x mb-2"></i>
           <h5>Settings</h5>
         </a>
@@ -200,7 +200,7 @@ input[type="checkbox"]:checked::before {
       </div>
       <div class="row p-4">
         <div class="col-12 text-center">
-         <a href="" class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Pay</a>
+         <a  class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Pay</a>
         </div>
       </div>
 
@@ -257,16 +257,19 @@ input[type="checkbox"]:checked::before {
   <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content rounded-4 backgroundYellow">
-        <div class="modal-header border-0">
-        </div>
-        <div class="modal-body px-5 text-center mb-2 border-0">
-          <p class="mb-1">You have chosen 25DT through your account balance</p>
+        <form action="P2.html" method="POST">
+
+          <div class="modal-header border-0">
+          </div>
+          <div class="modal-body px-5 text-center mb-2 border-0">
+            <p class="mb-1">You have chosen 25DT through your account balance</p>
           <input type="checkbox" name="check" id="check"> <span class="text-decoration-underline ps-2">Accept our terms and conditions</span>
         </div>
         <div class="modal-footer justify-content-end border-0">
           <a href="" class="text-black pe-1" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
-          <a href="" class="text-white">Yes</a>
+          <a href="P2.html" class="text-white">Yes</a>
         </div>
+      </form>
       </div>
     </div>
   </div>

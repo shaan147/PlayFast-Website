@@ -33,7 +33,7 @@
   <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
       <div class="list-group list-group-flush mx-3 mt-4">
-        <a href="Signin.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
+        <a href="Profile.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
           <i class="fa fa-user fa-2x mb-2"></i>
           <h5>My account</h5>
         </a>
@@ -41,7 +41,7 @@
           <i class="fa fa-gamepad fa-2x mb-2"></i>
           <h5>Games</h5>
         </a>
-        <a href="#" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
+        <a href="Settings.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
           <i class="fa fa-gear fa-2x mb-2"></i>
           <h5>Settings</h5>
         </a>
@@ -211,31 +211,33 @@
 
       <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
-          
-          <div class="modal-content rounded-4  backgroundYellow">
-            <div class="modal-header  border-0">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-    
-            <div class="modal-body px-5 text-center mb-5">
-              <p>You have 30DT game credits in your account, please enter the amount you want to use</p>
+          <form action="PromoCreditAdded.html" action="POST">
+
+            <div class="modal-content rounded-4  backgroundYellow">
+              <div class="modal-header  border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <div class="modal-body px-5 text-center mb-5">
+                <p>You have 30DT game credits in your account, please enter the amount you want to use</p>
               <div class="row justify-content-center">
 
                 <div class="col-5 text-end pe-0">
                   <input type="text" class="form-control bg-transparent login-form-control1  ">
-              
+                  
                 </div>
                 
                 <div class="col-2">
-                 <p style="font-size: 22px; font-weight: 500;">DT</p>
+                  <p style="font-size: 22px; font-weight: 500;">DT</p>
                 </div>
               </div>
               <div class="d-flex justify-content-center pt-3">
-              
+                
                 <button class="btn m-0 bg-white borderGrey" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Validate</button>
               </div>
             </div>
-       
+          </form>
+            
           </div>
         </div>
       </div>

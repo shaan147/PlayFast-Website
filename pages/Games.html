@@ -18,22 +18,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href=" ../images/favicon-16x16.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="manifest" href=" ../images/site.webmanifest">
-<style>
-  .hoverEffect:hover{
-    color: #3b3b3b;
+  <style>
+    .hoverEffect:hover {
+      color: #3b3b3b;
 
-  }
-</style>
+    }
+  </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-  
+
   <!-- Sidebar -->
   <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
       <div class="list-group list-group-flush mx-3 mt-4">
-        <a href="Signin.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
+        <a href="Profile.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
           <i class="fa fa-user fa-2x mb-2"></i>
           <h5>My account</h5>
         </a>
@@ -41,7 +41,7 @@
           <i class="fa fa-gamepad fa-2x mb-2"></i>
           <h5>Games</h5>
         </a>
-        <a href="#" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
+        <a href="Settings.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
           <i class="fa fa-gear fa-2x mb-2"></i>
           <h5>Settings</h5>
         </a>
@@ -111,113 +111,163 @@
 
   <main style=" margin-bottom: 80px;">
     <div class="row d-flex flex-row">
-    <div class="container pt-4">
-  <!-- setion start  -->
 
-  
+        <!-- setion start  -->
 
-    <div class="pt-4 col-9">
-      <p>Choose a match to participate</p>
-      <h3 class="mb-4">Today-DD/MM/YY</h3>
-      <div class="row align-items-center mb-4">
-        <div class="col-2 text-center"><img src="../images/court.png" alt=""></div>
-        <div class="col-5">
-          <p class="mb-0 medium22 text-left text-center-responsive">Court loc 2</p>
-          <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
-            With Hamza</p>
-        </div>
-      
-        <div class="col-4 text-end">
-          <p class="mb-0 medium22 text-left">19:00</p>
-          <p class="text-left">11/12 <i class="fa fa-user"></i></p>
-        </div>
-      </div>
-      <div class="row align-items-center mb-4">
-        <div class="col-2 text-center"><img src="../images/court.png" alt=""></div>
-        <div class="col-5">
-          <p class="mb-0 medium22 text-left text-center-responsive">Court loc 2</p>
-          <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
-            With Hamza</p>
-        </div>
-      
-        <div class="col-4 text-end">
-          <p class="mb-0 medium22 text-left text-center-responsive">19:00</p>
-          <p class="text-left text-center-responsive">11/12 <i class="fa fa-user"></i></p>
-        </div>
-      </div>
-      <div class="row align-items-center mb-4">
-        <div class="col-2 text-center"><img src="../images/court.png" alt=""></div>
-        <div class="col-5">
-          <p class="mb-0 medium22 text-left text-center-responsive">Court loc 2</p>
-          <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
-            With Hamza</p>
-        </div>
-      
-        <div class="col-4 text-end">
-          <p class="mb-0 medium22 text-left text-center-responsive">19:00</p>
-          <p class="text-left text-center-responsive">11/12 <i class="fa fa-user"></i></p>
-        </div>
-      </div>
-      <div class="row align-items-center mb-4">
-        <div class="col-2 text-center"><img src="../images/court.png" alt=""></div>
-        <div class="col-5">
-          <p class="mb-0 medium22 text-left text-center-responsive">Court loc 2</p>
-          <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
-            With Hamza</p>
-        </div>
-      
-        <div class="col-4 text-end">
-          <p class="mb-0 medium22 text-left text-center-responsive">19:00</p>
-          <p class="text-left text-center-responsive">11/12 <i class="fa fa-user"></i></p>
-        </div>
-      </div>
 
-      <h3 class="mb-4">Today-DD/MM/YY</h3>
 
-      <div class="row align-items-center mb-4">
-        <div class="col-2 text-center"><img src="../images/court.png" alt=""></div>
-        <div class="col-5">
-          <p class="mb-0 medium22 text-left text-center-responsive">Court loc 2</p>
-          <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
-            With Hamza</p>
-        </div>
+        <div class="pt-4 col-9 mx-auto width-100-resposnsice">
+          <p>Choose a match to participate</p>
+          <h3 class="mb-4">Today-DD/MM/YY</h3>
+          <div class="row align-items-center mb-4">
+            <div class="table-responsive overflox-x-hidden">
+              <table class="table" id="transactionTable">
+                <tbody>
+
+                  <tr class="colorgrey50 d-flex mb-4">
+                    <td class="d-flex align-items-center justify-content-center width-20 width-25-responsive">    <a href="Details.html">  <img src="../images/court.png" alt="">  </a></td>
+                    <td class=" align-items-center justify-content-center width-40 width-200px width60percent"> Court loc 2
+                      <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
+                        With Hamza</p>
+
+                    </td>
+                    <td class="w-25 text-end">
+
+                      <p class="mb-0 medium22 text-left">19:00</p>
+                      <p class="text-left">11/12 <i class="fa fa-user"></i></p>
+
+
+                    </td>
+
+
+                  </tr>
+                  <tr class="colorgrey50 d-flex mb-4">
+                    <td class="d-flex align-items-center justify-content-center width-20 width-25-responsive">    <a href="Details.html">  <img src="../images/court.png" alt="">  </a></td>
+                    <td class=" align-items-center justify-content-center width-40 width-200px width60percent"> Court loc 2
+                      <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
+                        With Hamza</p>
+
+                    </td>
+                    <td class="w-25 text-end">
+
+                      <p class="mb-0 medium22 text-left">19:00</p>
+                      <p class="text-left">11/12 <i class="fa fa-user"></i></p>
+
+
+                    </td>
+
+
+                  </tr>
+                  <tr class="colorgrey50 d-flex mb-4">
+                    <td class="d-flex align-items-center justify-content-center width-20 width-25-responsive">    <a href="Details.html">  <img src="../images/court.png" alt="">  </a></td>
+                    <td class=" align-items-center justify-content-center width-40 width-200px width60percent"> Court loc 2
+                      <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
+                        With Hamza</p>
+
+                    </td>
+                    <td class="w-25 text-end">
+
+                      <p class="mb-0 medium22 text-left">19:00</p>
+                      <p class="text-left">11/12 <i class="fa fa-user"></i></p>
+
+
+                    </td>
+
+
+                  </tr>
+               
+
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h3 class="mb-4">Today-DD/MM/YY</h3>
+          <div class="row align-items-center mb-4">
+            <div class="table-responsive overflox-x-hidden">
+              <table class="table" id="transactionTable">
+                <tbody>
+                  <tr class="colorgrey50 d-flex mb-4">
+                    <td class="d-flex align-items-center justify-content-center width-20 width-25-responsive">    <a href="Details.html">  <img src="../images/court.png" alt="">  </a></td>
+                    <td class=" align-items-center justify-content-center width-40 width-200px width60percent"> Court loc 2
+                      <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
+                        With Hamza</p>
+
+                    </td>
+                    <td class="w-25 text-end">
+
+                      <p class="mb-0 medium22 text-left">19:00</p>
+                      <p class="text-left">11/12 <i class="fa fa-user"></i></p>
+
+
+                    </td>
+
+
+                  </tr>     <tr class="colorgrey50 d-flex mb-4">
+                    <td class="d-flex align-items-center justify-content-center width-20 width-25-responsive">    <a href="Details.html">  <img src="../images/court.png" alt="">  </a></td>
+                    <td class=" align-items-center justify-content-center width-40 width-200px width60percent"> Court loc 2
+                      <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
+                        With Hamza</p>
+
+                    </td>
+                    <td class="w-25 text-end">
+
+                      <p class="mb-0 medium22 text-left">19:00</p>
+                      <p class="text-left">11/12 <i class="fa fa-user"></i></p>
+
+
+                    </td>
+
+
+                  </tr>     <tr class="colorgrey50 d-flex mb-4">
+                <td class="d-flex align-items-center justify-content-center width-20 width-25-responsive">    <a href="Details.html">  <img src="../images/court.png" alt="">  </a></td>
+                    <td class=" align-items-center justify-content-center width-40 width-200px width60percent"> Court loc 2
+                      <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
+                        With Hamza</p>
+
+                    </td>
+                    <td class="w-25 text-end">
+
+                      <p class="mb-0 medium22 text-left">19:00</p>
+                      <p class="text-left">11/12 <i class="fa fa-user"></i></p>
+
+
+                    </td>
+
+
+                  </tr>     <tr class="colorgrey50 d-flex mb-4">
+                    <td class="d-flex align-items-center justify-content-center width-20 width-25-responsive">    <a href="Details.html">  <img src="../images/court.png" alt="">  </a></td>
+                    <td class=" align-items-center justify-content-center width-40 width-200px width60percent"> Court loc 2
+                      <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
+                        With Hamza</p>
+
+                    </td>
+                    <td class="w-25 text-end">
+
+                      <p class="mb-0 medium22 text-left">19:00</p>
+                      <p class="text-left">11/12 <i class="fa fa-user"></i></p>
+
+
+                    </td>
+
+
+                  </tr>
       
-        <div class="col-4 text-end">
-          <p class="mb-0 medium22 text-left">19:00</p>
-          <p class="text-left">11/12 <i class="fa fa-user"></i></p>
+
+
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row align-items-center mb-4">
-        <div class="col-2 text-center"><img src="../images/court.png" alt=""></div>
-        <div class="col-5">
-          <p class="mb-0 medium22 text-left text-center-responsive">Court loc 2</p>
-          <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
-            With Hamza</p>
-        </div>
-      
-        <div class="col-4 text-end">
-          <p class="mb-0 medium22 text-left text-center-responsive">19:00</p>
-          <p class="text-left text-center-responsive">11/12 <i class="fa fa-user"></i></p>
-        </div>
-      </div>
-      <div class="row align-items-center mb-4">
-        <div class="col-2 text-center"><img src="../images/court.png" alt=""></div>
-        <div class="col-5">
-          <p class="mb-0 medium22 text-left text-center-responsive">Court loc 2</p>
-          <p class="colorgrey50 text-left width-40 text-center-responsive">Outdoor 6 vs 6
-            With Hamza</p>
-        </div>
-      
-        <div class="col-4 text-end">
-          <p class="mb-0 medium22 text-left text-center-responsive">19:00</p>
-          <p class="text-left text-center-responsive">11/12 <i class="fa fa-user"></i></p>
-        </div>
-      </div>
+
+
+
+
 
     </div>
-  </div>
-</div>
-</main>
+  </main>
 
   <!-- setion end  -->
 
