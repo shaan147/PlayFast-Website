@@ -54,9 +54,19 @@
 
 
   <!-- Navbar Start  -->
-  <nav class="navbar navbar-expand-lg padding-122 zindexback">
+  <nav class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="../images/playfast-logo.png" class="navbarlogo" alt=""></a>
+      <div class="nav-item dropdown d-none" id="showhide">
+        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="coloryellow">EN</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">FR</a></li>
+          <!-- <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+        </ul>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -81,25 +91,16 @@
           <li class="nav-item">
             <a class=" btn btn-primary px-3" href="#">Join Now</a>
           </li>
-          <li class="nav-item dropdown d-none" id="showhide">
-            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="coloryellow">ENG</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Spanish</a></li>
-              <!-- <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            </ul>
-          </li>
+        
         </ul>
       </div>
       <div class="float-end" id="notshow">
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="coloryellow">ENG</span>
+            <span class="coloryellow">EN</span>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Spanish</a></li>
+            <li><a class="dropdown-item" href="#">FR</a></li>
             <!-- <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
@@ -110,10 +111,10 @@
   <!-- Navbar End  -->
 
 
-  <main style="margin-bottom: 80px;">
-    <div class="p-5 align-content-center text-center">
+  <main class="mainContainer">
+    <div class="p-5 align-content-center text-center p-0-fix">
       <img src="../images/Profile.png" class="progilrImage" alt="" >
-      <div class="py-5">
+      <div class="py-5 py-0-fix">
         <a href="Pictures.html" class="text-warning">Change profile picture</a>
 
       </div>
@@ -121,13 +122,13 @@
       <div class="px-5 mx-5 px-fix-on-mobiloe">
         <h5 class="mb-4">Your email address: abc@gmail.com</h5>
         <h6 class="mb-4">Game(s) played:</h6>
-        <div class="row mb-5">
-          <div class="col-6 text-start">
+        <div class="row mb-4">
+          <div class="col-6 text-start p-0-fix">
             <p>This week: 0</p>
             <p>This month: 0</p>
 
           </div>
-          <div class="col-6 text-end">
+          <div class="col-6 text-end p-0-fix">
             <p>This year: 0</p>
             <p>All time: 0</p>
           </div>

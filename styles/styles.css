@@ -234,7 +234,10 @@ div#transactionTable_info {
     --bs-btn-padding-x: 2rem;
     --bs-btn-padding-y: 0.375rem;
 }
-
+.navbar-toggler{
+    border: 2px solid #FFCA00 !important;
+    color: white !important;
+}
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #FFCA00;
@@ -310,12 +313,36 @@ div#transactionTable_info {
 .borderGrey{
     border: 1px solid #D1D5DB;
 }
+.mainContainer{
+    margin-bottom: 80px;
+    margin-top: 82px;
+
+}
 
 
 @media (max-width: 650px){
+    .col-9 {
+        width: 85%;
+    }
+    .col-9 .col-6{
+        margin-bottom: 10px !important;
+        padding: 10px !important;
+    }
+    .col-9 .col-6 img{
+        width: 100% !important;
+    }
+    .shadow-fix-mobile{
+        box-shadow: var(--bs-box-shadow) !important;
+        
+    }
+    .container-fluid{
+        text-align: center !important;
+    }
     .padding-122{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+    .mainContainer{
     }
     .width-50{
         width: 90% !important;
@@ -447,14 +474,29 @@ div#transactionTable_info {
         padding-top: 0px !important;
     }
     .width-40-reponsive{
-        width: 40% !important;
+        width: 50% !important;
     }
+    .medium22{
+        font-size: 14px !important;
+        margin: 0px !important;
+    }
+    td.d-flex.align-items-center.justify-content-center.w-25 {
+    width: 30% !important;
+    }
+    
+    td.d-flex.align-items-center.justify-content-center.w-25 p{
+       font-size: 14px !important;
+
+        }
     .padding-0{
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
     .width-100px{
-        width: 100px !important; 
+        width: 90px !important; 
+    }
+    .width-100px img{
+        width: 100% !important; 
     }
     .overflox-x-hidden{
         overflow-x: hidden !important;
@@ -492,12 +534,23 @@ div#transactionTable_info {
     .progilrImage{
         width: 90% !important;
     }
+    .p-0-fix{
+        padding: 20px !important;
+        padding-bottom: 0px !important;
+
+    }
+    .px-fix-on-mobiloe{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        text-align: center !important;
+    }
+    .py-0-fix{
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+    }
     
 }
-.px-fix-on-mobiloe{
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
+
 .cursor-pointer {
     cursor: pointer;
 }
