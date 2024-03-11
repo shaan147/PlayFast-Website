@@ -489,9 +489,18 @@ div#transactionTable_info {
     .width95fix{
         width: 95% !important;
     }
+    .progilrImage{
+        width: 90% !important;
+    }
     
 }
-
+.px-fix-on-mobiloe{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
 
 .width-50fix{
     width: 50%;
@@ -506,6 +515,9 @@ div#transactionTable_info {
 .hoverEffect:hover {
     color: #3b3b3b;
 
+  }
+  .progilrImage{
+    width: 20%;
   }
 
   @media (min-width: 991.98px) {

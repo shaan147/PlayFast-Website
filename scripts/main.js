@@ -55,3 +55,7 @@ $(document).ready(function(){
   $('.owl_wrapper .next').click(function(){owl.next();});
   $('.owl_wrapper .prev').click(function(){owl.prev();});
 });
+
+function redirect() {
+        window.location.href = "Details.html";
+    }
