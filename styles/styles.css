@@ -323,6 +323,23 @@ div#transactionTable_info {
 }
 
 @media (max-width: 650px){
+    .footermenudiv{
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+        width: 33%; text-align: center;
+    }
+   .sizefoooter{
+    font-size: 22px !important;
+   }
+    .footermenudiv p{
+        padding: 0px !important;
+        margin: 0px !important;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .displayblockmobile{
+        display: block !important;
+    }
     .col-9 {
         width: 85%;
     }
