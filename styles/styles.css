@@ -318,11 +318,16 @@ div#transactionTable_info {
     margin-top: 82px;
 
 }
-
+.mt-90px{
+    padding-top: 100px !important;
+}
 
 @media (max-width: 650px){
     .col-9 {
         width: 85%;
+    }
+    .mt-90px{
+        padding-top: 90px !important;
     }
     .col-9 .col-6{
         margin-bottom: 10px !important;

@@ -27,9 +27,19 @@
 <body class="d-flex flex-column min-vh-100">
 
   <!-- Navbar Start  -->
-  <nav class="navbar navbar-expand-lg padding-122">
+  <nav class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="./images/playfast-logo.png" class="navbarlogo" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img src="images/playfast-logo.png" class="navbarlogo" alt=""></a>
+      <div class="nav-item dropdown d-none" id="showhide">
+        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="coloryellow">EN</span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">FR</a></li>
+          <!-- <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+        </ul>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,42 +47,33 @@
         <!-- Updated class -->
         <ul class="navbar-nav  mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/Matches.html">Matches</a>
+            <a class="nav-link active" href="pages/Matches.html">Matches</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/Aboutus.html">About us</a>
+            <a class="nav-link" href="pages/Aboutus.html">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/Contactus.html">Contact</a>
+            <a class="nav-link " href="pages/Contactus.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/Term.html">Terms & Conditions</a>
+            <a class="nav-link " href="pages/Term.html">Terms & Conditions</a>
           </li>
           <li class="nav-item">
             <a class=" btn btn-primary px-3" href="#">Join Now</a>
           </li>
-          <li class="nav-item dropdown d-none" id="showhide">
-            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="coloryellow">ENG</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Spanish</a></li>
-              <!-- <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            </ul>
-          </li>
+        
         </ul>
       </div>
       <div class="float-end" id="notshow">
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="coloryellow">ENG</span>
+            <span class="coloryellow">EN</span>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Spanish</a></li>
+            <li><a class="dropdown-item" href="#">FR</a></li>
             <!-- <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
@@ -82,7 +83,7 @@
   </nav>
   <!-- Navbar End  -->
   <!-- Herosection Start  -->
-  <div class="mb-5 position-relative">
+  <div class="mb-5 position-relative mt-90px">
     <img src="./images/herosection.png" class="w-100" alt="">
     <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
       <h1 class="text-shadow">Big Heading</h1>
