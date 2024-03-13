@@ -321,8 +321,14 @@ div#transactionTable_info {
 .mt-90px{
     padding-top: 100px !important;
 }
+.detailsimagesset{
+    width: 60px; float: right;
+}
 
 @media (max-width: 650px){
+    .detailsimagesset{
+        width: 60px; float: none;
+    }
     .footermenudiv{
         padding-top: 8px !important;
         padding-bottom: 8px !important;
@@ -331,6 +337,10 @@ div#transactionTable_info {
    .sizefoooter{
     font-size: 22px !important;
    }
+   .breaklinefix{
+    white-space: pre;
+   }
+   
     .footermenudiv p{
         padding: 0px !important;
         margin: 0px !important;
@@ -585,6 +595,14 @@ div#transactionTable_info {
         padding-top: 25px !important;
         padding-bottom: 25px !important;
     }
+    .widtghfix{
+        width: 60% !important;
+        padding: 0px !important;
+       }
+       .width20fix{
+        width: 20% !important;
+        padding: 0px !important;
+       }
     
 }
 
