@@ -107,7 +107,7 @@
   <!-- Navbar End  -->
 
 
-  <main style="margin-top: 145px; margin-bottom: 80px;">
+  <main style="margin-top: 145px; margin-bottom: 80px;" class="mtset">
     <div class="row d-flex flex-row">
     <div class="container pt-4">
     
@@ -138,13 +138,17 @@
               <input type="text" class="form-control login-form-control" id="Surname">
             </div>
             <div class="mb-5">
+              <label for="age" class="form-label mb-3">Age:</label>
+              <input type="number" class="form-control login-form-control" id="age">
+            </div>
+            <!-- <div class="mb-5">
               <select name="age" id="age" class="form-select login-form-select fs-6">
                 <option value="" selected disabled>Age</option>
                 <option value="18">18</option>
                 <option value="19">19</option>
                 <option value="20">20</option>
               </select>
-            </div>
+            </div> -->
 
             <div class="text-center">
               <!-- Added text-center class -->
@@ -160,9 +164,7 @@
 
 
   <!-- back to top  -->
-  <button type="button" class="btn btn-danger btn-floating btn-lg" onclick="topFunction()" title="Go to top" id="back-top">
-    <img src=" ../images/upArrow.svg" style="width: 20px;" alt="">
-  </button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
 
   <!-- Footer Menu Start -->
 

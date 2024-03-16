@@ -16,6 +16,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href=" ../images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href=" ../images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href=" ../images/favicon-16x16.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <link rel="manifest" href=" ../images/site.webmanifest">
 </head>
 
@@ -94,22 +96,22 @@
       <form class="col-8 me-auto ms-auto px-0">
         <div class="row mb-4">
           <div class="width-50fix">
-            <input type="text" class="form-control poppines" id="firstName" placeholder="First Name">
+            <input type="text" class="form-control poppines borderYellow" id="firstName" placeholder="First Name">
           </div>
           <div class="width-50fix">
-            <input type="text" class="form-control poppines" id="lastName" placeholder="Last Name">
+            <input type="text" class="form-control poppines borderYellow" id="lastName" placeholder="Last Name">
           </div>
         </div>
         <div class="mb-4">
-          <input type="email" class="form-control poppines" id="email" placeholder="Email">
+          <input type="email" class="form-control poppines borderYellow" id="email" placeholder="Email">
         </div>
         <div class="mb-4">
-          <input type="phone" class="form-control poppines" id="phone" placeholder="Phone Number">
+          <input type="phone" class="form-control poppines borderYellow" id="phone" placeholder="Phone Number">
         </div>
         <div class="mb-4">
-          <input type="text" class="form-control poppines" id="city" placeholder="City">
+          <input type="text" class="form-control poppines borderYellow" id="city" placeholder="City">
         </div>
-        <textarea name="yourMessage" class="form-control poppines" id="yourMessage" placeholder="Your Message" cols="30" rows="6"></textarea>
+        <textarea name="yourMessage" class="form-control poppines borderYellow" id="yourMessage" placeholder="Your Message" cols="30" rows="6"></textarea>
 
         <div class="text-start mt-5 txenter">
           <!-- Added text-center class -->
@@ -119,9 +121,8 @@
     </div>
   </div>
   <!-- back to top  -->
-  <button type="button" class="btn btn-danger btn-floating btn-lg" onclick="topFunction()" title="Go to top" id="back-top">
-    <img src=" ../images/upArrow.svg" style="width: 20px;" alt="">
-  </button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
 
   <footer class="footer p-3 footerBackground mt-auto">
     <!-- Use mt-auto to push the footer to the bottom -->
