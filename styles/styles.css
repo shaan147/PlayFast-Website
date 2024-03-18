@@ -21,6 +21,7 @@ html, body {
   #ShowonScroll{
     display: none;
   }
+
   
   #myBtn:hover {
     background-color: #ffe480;
@@ -211,7 +212,9 @@ div#transactionTable_info {
 .width-100 {
     width: 100%;
 }
-
+.showonMobile{
+    display: none;
+}
 .center-content {
     display: flex;
     justify-content: center;
@@ -495,6 +498,12 @@ margin: 50px 0px 20px 0px !important;
     }
     #notshow{
         display: none;
+    }
+    .hideonmobile{
+        display: none !important;
+    }
+    .showonMobile{
+        display: block !important;
     }
     #showhide{
         display: block !important;

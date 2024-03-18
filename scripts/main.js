@@ -1,3 +1,19 @@
+
+let lastScrollTop = 0;
+window.addEventListener("scroll", function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScroll > lastScrollTop) {
+    // Scroll down, hide the footer menu and show the join game button
+    document.querySelector('.fixed-bottom').classList.add('showonMobile');
+    document.querySelector('#ShowonScroll').classList.remove('d-none');
+  } else {
+    // Scroll up, hide the join game button and show the footer menu
+    document.querySelector('#ShowonScroll').classList.add('d-none');
+    document.querySelector('.fixed-bottom').classList.remove('showonMobile');
+  }
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});
+
 // Get the button
 let mybutton = document.getElementById("myBtn");
 
