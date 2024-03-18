@@ -47,9 +47,26 @@ function scrollFunction1() {
     mybutton1.style.display = "none";
   }
 }
+function redirectToPage() {
+  var selectedOption = document.querySelector('input[name="payment"]:checked').value;
+  switch (selectedOption) {
+    case 'advance_payment':
+      window.location.href = 'P2.html';
+      break;
 
+    default:
+      // If no option is selected, do nothing or handle it as needed
+      break;
+  }
+}
+          // Function to show modal when the radio button is clicked
+  document.getElementById('payment1').addEventListener('click', function() {
+    document.getElementById('modalTrigger').click();
+  });
 
-        
+  document.getElementById('payment3').addEventListener('click', function() {
+    document.getElementById('modalTrigger2').click();
+  });
 
   var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",

@@ -155,7 +155,7 @@
           <li class="nav-item">
             <a class=" btn btn-primary px-3" href="Signup.html">Join Now</a>
           </li>
-
+        
         </ul>
       </div>
       <div class="float-end" id="notshow">
@@ -204,17 +204,13 @@
           <hr>
           <div class="px-5 py-4">
             <div class="mb-5">
-              <!-- Radio button -->
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="payment1" name="payment" style="width: 19px; height: 19px;" value="credit_card">
+                <input type="radio" class="form-check-input" id="payment1" name="payment" style="width: 19px; height: 19px;" value="credit_card" checked>
                 <label class="form-check-label" for="payment1">
                   <span style="font-size: 18px; font-weight: 600;">Pay by credit card</span>
                   <p class="text-decoration-underline">Immediate confirmation of participation</p>
                 </label>
               </div>
-
-              <!-- Trigger button for modal -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paymentModal" style="display: none;" id="modalTrigger"></button>
             </div>
             <div class="mb-5">
               <div class="form-check">
@@ -233,13 +229,10 @@
                   <p class="text-decoration-underline">Immediate confirmation of participation</p>
                 </label>
               </div>
-              
-              <!-- Trigger button for modal -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalToggle4" style="display: none;" id="modalTrigger2"></button>
             </div>
             <div class="row p-4">
               <div class="col-12 text-center">
-                <button class="btn btn-primary" onclick="redirectToPage()">Pay</button>
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Pay</button>
               </div>
             </div>
           </div>
@@ -275,13 +268,7 @@
                       <p class="mb-0">-5 DT</p>
                     </td>
                   </tr>
-                  <tr class="colorgrey50 d-flex mb-4">
-                    <td class=" align-items-center justify-content-center width-10 text-end"> </td>
-                    <td class="d-flex align-items-center  width-55"> <input type="text" class="form-control bg-transparent login-form-control " disabled placeholder="Account credit"> </td>
-                    <td class="d-flex align-items-center justify-content-center w-25">
-                      <p class="mb-0">-10 DT</p>
-                    </td>
-                  </tr>
+                  
                   <tr class="colorgrey50 d-flex mb-4">
                     <td class=" align-items-center justify-content-center w-25 text-end"> </td>
                     <td class="d-flex align-items-center  width-30"> </td>
@@ -302,29 +289,6 @@
   </main>
 
   <!-- setion end  -->
-  <!-- Modal Start 3 -->
-
-  <div class="modal fade" id="paymentModal" aria-hidden="true" aria-labelledby="paymentModalLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content rounded-4 backgroundYellow">
-        <form action="P2.html" method="POST">
-
-          <div class="modal-header border-0">
-          </div>
-          <div class="modal-body px-5 text-center mb-2 border-0">
-            <p class="mb-1">Are you sure you want to pay by credit card?</p>
-          </div>
-          <div class="modal-footer justify-content-end border-0">
-            <a href="" class="text-black pe-1" data-bs-dismiss="modal" aria-label="Close">No</a>
-            <a href="P3.html" class="text-white">Yes</a>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Modal End  3 -->
   <!-- Modal Start 4 -->
 
   <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
@@ -349,58 +313,58 @@
 
 
   <!-- Modal End  4 -->
-  <!-- Modal Start 5 -->
+    <!-- Modal Start 5 -->
 
-  <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content rounded-4 backgroundYellow">
-        <form action="P2.html" method="POST">
-
-          <div class="modal-header border-0">
-            <button type="button" class="btn-close" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal"></button>
-
-          </div>
-          <div class="modal-body px-5 text-center mb-2 border-0">
-            <h1 class="mb-5">Terms and Conditions</h1>
-            <p>Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque scelerisque mi non urna condimentum, nec commodo massa euismod. Nunc in sem in metus lobortis facilisis. Vestibulum mi ligula, pellentesque in tincidunt in, vestibulum sed est. Mauris eget imperdiet arcu, ac laoreet ex. Proin et fringilla mauris, eget tempor ligula. Mauris dictum odio et ipsum pharetra, quis mollis tortor condimentum. Nam mauris purus, elementum at cursus at, vestibulum non diam. Vestibulum fermentum tempus magna a venenatis. Donec euismod aliquam arcu, eu interdum nulla egestas at. Proin eget metus eu metus bibendum mollis vitae a augue. Suspendisse sagittis hendrerit arcu nec pellentesque. Duis laoreet orci non velit interdum, ut faucibus tortor vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel tortor orci. Proin id turpis mattis, semper neque eu, laoreet purus. Curabitur nec odio vel tellus pellentesque tristique. Suspendisse purus est, laoreet ut elementum eget, semper et felis. Sed eu mauris porttitor, tincidunt justo non, gravida enim. Ut iaculis ante quis magna auctor euismod. Donec ut cursus ante, ut mattis tellus. Proin non nisl at massa blandit convallis. Nam vel dolor eu risus ultrices facilisis. Suspendisse commodo aliquam viverra. Ut a dolor ut nibh vulputate tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Pellentesque vel vehicula sapien. Suspendisse ut ornare nulla. Sed eu convallis felis, a consectetur erat. Proin aliquet augue non libero lobortis dapibus. Pellentesque blandit ut ante vel iaculis. Pellentesque a vestibulum dolor, sed sollicitudin est. Nullam id erat in elit blandit efficitur at id libero. Nullam nec dapibus purus. Ut vestibulum luctus libero, vitae rhoncus dolor pretium a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque non ullamcorper erat, id bibendum ipsum. In sit amet volutpat mauris, vitae tempus massa. In vel pellentesque tortor, quis sodales velit. Vestibulum libero risus, vehicula at turpis vel, maximus sodales ligula.Etiam urna tortor, hendrerit at lobortis a, scelerisque ac ex. Curabitur at nisl nec erat pharetra bibendum eu at lorem. Curabitur mattis tellus vel commodo dapibus. Nulla vitae nisl malesuada, dictum purus et, porta eros. Nulla ornare nibh quis diam tincidunt, vel imperdiet nunc vehicula. Proin sollicitudin quam diam, eget malesuada nunc vehicula eu. Cras euismod in nunc vel auctor. Pellentesque sollicitudin libero purus, vel commodo dui luctus nec. Morbi nec pretium orci. Curabitur dignissim felis a elementum sollicitudin</p>
-
-          </div>
-
-        </form>
+    <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content rounded-4 backgroundYellow">
+          <form action="P2.html" method="POST">
+  
+            <div class="modal-header border-0">
+              <button type="button" class="btn-close" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal"></button>
+     
+            </div>
+            <div class="modal-body px-5 text-center mb-2 border-0">
+              <h1 class="mb-5">Terms and Conditions</h1>
+              <p>Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque scelerisque mi non urna condimentum, nec commodo massa euismod. Nunc in sem in metus lobortis facilisis. Vestibulum mi ligula, pellentesque in tincidunt in, vestibulum sed est. Mauris eget imperdiet arcu, ac laoreet ex. Proin et fringilla mauris, eget tempor ligula. Mauris dictum odio et ipsum pharetra, quis mollis tortor condimentum. Nam mauris purus, elementum at cursus at, vestibulum non diam. Vestibulum fermentum tempus magna a venenatis. Donec euismod aliquam arcu, eu interdum nulla egestas at. Proin eget metus eu metus bibendum mollis vitae a augue. Suspendisse sagittis hendrerit arcu nec pellentesque. Duis laoreet orci non velit interdum, ut faucibus tortor vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel tortor orci. Proin id turpis mattis, semper neque eu, laoreet purus. Curabitur nec odio vel tellus pellentesque tristique. Suspendisse purus est, laoreet ut elementum eget, semper et felis. Sed eu mauris porttitor, tincidunt justo non, gravida enim. Ut iaculis ante quis magna auctor euismod. Donec ut cursus ante, ut mattis tellus. Proin non nisl at massa blandit convallis. Nam vel dolor eu risus ultrices facilisis. Suspendisse commodo aliquam viverra. Ut a dolor ut nibh vulputate tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Pellentesque vel vehicula sapien. Suspendisse ut ornare nulla. Sed eu convallis felis, a consectetur erat. Proin aliquet augue non libero lobortis dapibus. Pellentesque blandit ut ante vel iaculis. Pellentesque a vestibulum dolor, sed sollicitudin est. Nullam id erat in elit blandit efficitur at id libero. Nullam nec dapibus purus. Ut vestibulum luctus libero, vitae rhoncus dolor pretium a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque non ullamcorper erat, id bibendum ipsum. In sit amet volutpat mauris, vitae tempus massa. In vel pellentesque tortor, quis sodales velit. Vestibulum libero risus, vehicula at turpis vel, maximus sodales ligula.Etiam urna tortor, hendrerit at lobortis a, scelerisque ac ex. Curabitur at nisl nec erat pharetra bibendum eu at lorem. Curabitur mattis tellus vel commodo dapibus. Nulla vitae nisl malesuada, dictum purus et, porta eros. Nulla ornare nibh quis diam tincidunt, vel imperdiet nunc vehicula. Proin sollicitudin quam diam, eget malesuada nunc vehicula eu. Cras euismod in nunc vel auctor. Pellentesque sollicitudin libero purus, vel commodo dui luctus nec. Morbi nec pretium orci. Curabitur dignissim felis a elementum sollicitudin</p>
+          
+            </div>
+         
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-
-
-  <!-- Modal End  5 -->
+  
+  
+    <!-- Modal End  5 -->
 
 
   <!-- back to top  -->
-
+ 
 
   <!-- Footer Menu Start -->
 
   <div class="fixed-bottom d-none displayblockmobile" style="background: white; border-top: 1px solid #D1D5DB;">
     <div class="row">
-
+      
       <div class="footermenudiv">
         <a href="Profile.html" class="text-decoration-none text-black" aria-current="true">
-          <i class="fa fa-user mb-2 sizefoooter"></i>
-          <p>My Account</p>
-        </a>
+        <i class="fa fa-user mb-2 sizefoooter"></i>
+        <p>My Account</p>
+      </a>
       </div>
 
       <div class="footermenudiv">
         <a href="Games.html" class="text-decoration-none text-black activeYellow" aria-current="true">
-          <i class="fa fa-gamepad mb-2 sizefoooter"></i>
-          <p>Games</p>
-        </a>
+        <i class="fa fa-gamepad mb-2 sizefoooter"></i>
+        <p>Games</p>
+      </a>
       </div>
       <div class="footermenudiv">
         <a href="Settings.html" class="text-decoration-none text-black" aria-current="true">
-          <i class="fa fa-gear mb-2 sizefoooter"></i>
-          <p>Settings</p>
-        </a>
+        <i class="fa fa-gear mb-2 sizefoooter"></i>
+        <p>Settings</p>
+      </a>
       </div>
     </div>
   </div>
