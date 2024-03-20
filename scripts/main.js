@@ -1,4 +1,22 @@
 
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 let lastScrollTop = 0;
 window.addEventListener("scroll", function() {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -47,18 +65,33 @@ function scrollFunction1() {
     mybutton1.style.display = "none";
   }
 }
-function redirectToPage() {
-  var selectedOption = document.querySelector('input[name="payment"]:checked').value;
-  switch (selectedOption) {
-    case 'advance_payment':
-      window.location.href = 'P2.html';
-      break;
 
-    default:
-      // If no option is selected, do nothing or handle it as needed
-      break;
+function handlePayment() {
+  var paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+
+  if (paymentMethod === "credit_card") {
+    // Show modal for credit card payment
+    $('#paymentModal').modal('show');
+  } else if (paymentMethod === "advance_payment") {
+    // Redirect to next page for advance payment
+    window.location.href = "P2.html";
+  } else if (paymentMethod === "account_balance") {
+    // Redirect to another page for account balance payment
+    window.location.href = "P4.html";
   }
 }
+// function redirectToPage() {
+//   var selectedOption = document.querySelector('input[name="payment"]:checked').value;
+//   switch (selectedOption) {
+//     case 'advance_payment':
+//       window.location.href = 'P2.html';
+//       break;
+
+//     default:
+//       // If no option is selected, do nothing or handle it as needed
+//       break;
+//   }
+// }
           // Function to show modal when the radio button is clicked
   document.getElementById('payment1').addEventListener('click', function() {
     document.getElementById('modalTrigger').click();
@@ -68,24 +101,7 @@ function redirectToPage() {
     document.getElementById('modalTrigger2').click();
   });
 
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
 
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
 
 if ("serviceWorker" in navigator) {
 	window.addEventListener("load", function () {
