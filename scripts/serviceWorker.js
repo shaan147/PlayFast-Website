@@ -11,7 +11,7 @@ const urlsToCache = [
     '/Contactus.html',
     '/Term.html',
     '/styles/styles.css',
-    '/scripts/index.js',
+    '/scripts/main.js',
     // Add other files to cache here
 ];
 
@@ -31,7 +31,7 @@ self.addEventListener('activate', event => {
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.filter(cacheName => {
-                    return cacheName.startsWith('playfast-cache') && cacheName !== CACHE_NAME;
+                    return cacheName.startsWith('playfast-cache-v1') && cacheName !== CACHE_NAME;
                 }).map(cacheName => {
                     return caches.delete(cacheName);
                 })

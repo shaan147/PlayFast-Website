@@ -102,15 +102,8 @@ function handlePayment() {
   });
 
 
-
-if ("serviceWorker" in navigator) {
-	window.addEventListener("load", function () {
-		navigator.serviceWorker
-			.register("/scripts/serviceWorker.js")
-			.then(res => console.log("service worker registered"))
-			.catch(err => console.log("service worker not registered", err));
-	});
-}
+   
+  
 
 $(document).ready(function(){
   $(".owl_content").owlCarousel({
@@ -142,3 +135,37 @@ function redirect() {
         window.location.href = "Details.html";
     }
 
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./serviceWorker.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+     
+    let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
+
+document.getElementById('downloadAndroidApp').addEventListener('click', () => {
+  if (deferredPrompt) {
+    // Show the prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+      }
+      deferredPrompt = null;
+    });
+  }
+});
