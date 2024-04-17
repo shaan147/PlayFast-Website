@@ -1,4 +1,3 @@
-
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
@@ -11,23 +10,22 @@ var swiper = new Swiper(".mySwiper", {
     depth: 100,
     modifier: 1,
     slideShadows: true,
-
   },
   pagination: {
     el: ".swiper-pagination",
   },
 });
 let lastScrollTop = 0;
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
   if (currentScroll > lastScrollTop) {
     // Scroll down, hide the footer menu and show the join game button
-    document.querySelector('.fixed-bottom').classList.add('showonMobile');
-    document.querySelector('#ShowonScroll').classList.remove('d-none');
+    document.querySelector(".fixed-bottom").classList.add("showonMobile");
+    document.querySelector("#ShowonScroll").classList.remove("d-none");
   } else {
     // Scroll up, hide the join game button and show the footer menu
-    document.querySelector('#ShowonScroll').classList.add('d-none');
-    document.querySelector('.fixed-bottom').classList.remove('showonMobile');
+    document.querySelector("#ShowonScroll").classList.add("d-none");
+    document.querySelector(".fixed-bottom").classList.remove("showonMobile");
   }
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
@@ -67,11 +65,13 @@ function scrollFunction1() {
 }
 
 function handlePayment() {
-  var paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+  var paymentMethod = document.querySelector(
+    'input[name="payment"]:checked'
+  ).value;
 
   if (paymentMethod === "credit_card") {
     // Show modal for credit card payment
-    $('#paymentModal').modal('show');
+    $("#paymentModal").modal("show");
   } else if (paymentMethod === "advance_payment") {
     // Redirect to next page for advance payment
     window.location.href = "P2.html";
@@ -92,78 +92,76 @@ function handlePayment() {
 //       break;
 //   }
 // }
-          // Function to show modal when the radio button is clicked
-  document.getElementById('payment1').addEventListener('click', function() {
-    document.getElementById('modalTrigger').click();
-  });
+// Function to show modal when the radio button is clicked
+document.getElementById("payment1").addEventListener("click", function () {
+  document.getElementById("modalTrigger").click();
+});
 
-  document.getElementById('payment3').addEventListener('click', function() {
-    document.getElementById('modalTrigger2').click();
-  });
+document.getElementById("payment3").addEventListener("click", function () {
+  document.getElementById("modalTrigger2").click();
+});
 
-
-   
-  
-
-$(document).ready(function(){
+$(document).ready(function () {
   $(".owl_content").owlCarousel({
     rewindNav: false,
     addClassActive: true, //important
     mouseDrag: false,
-    afterAction: function add_mid_class(el){
-      $('.owl-item')                     
-        .removeClass('middle')
-        .removeClass('middle_beside')
-        .removeClass('next_to_mid')
-        .removeClass('prev_to_mid');
-      var middle_item = Math.floor($('.active').length / 2);
-      middle_item --;
-      $('.active').eq(middle_item - 1).addClass('middle_beside');
-      $('.active').eq(middle_item).addClass('middle');
-      $('.active').eq(middle_item + 1).addClass('middle_beside');
-      $('.active').eq(middle_item + 1).nextAll().addClass('next_to_mid');
-      $('.active').eq(middle_item - 1).prevAll().addClass('prev_to_mid');
-    }
+    afterAction: function add_mid_class(el) {
+      $(".owl-item")
+        .removeClass("middle")
+        .removeClass("middle_beside")
+        .removeClass("next_to_mid")
+        .removeClass("prev_to_mid");
+      var middle_item = Math.floor($(".active").length / 2);
+      middle_item--;
+      $(".active")
+        .eq(middle_item - 1)
+        .addClass("middle_beside");
+      $(".active").eq(middle_item).addClass("middle");
+      $(".active")
+        .eq(middle_item + 1)
+        .addClass("middle_beside");
+      $(".active")
+        .eq(middle_item + 1)
+        .nextAll()
+        .addClass("next_to_mid");
+      $(".active")
+        .eq(middle_item - 1)
+        .prevAll()
+        .addClass("prev_to_mid");
+    },
   });
 
-  var owl = $(".owl_content").data('owlCarousel');
-  $('.owl_wrapper .next').click(function(){owl.next();});
-  $('.owl_wrapper .prev').click(function(){owl.prev();});
+  var owl = $(".owl_content").data("owlCarousel");
+  $(".owl_wrapper .next").click(function () {
+    owl.next();
+  });
+  $(".owl_wrapper .prev").click(function () {
+    owl.prev();
+  });
 });
 
 function redirect() {
-        window.location.href = "Details.html";
-    }
+  window.location.href = "Details.html";
+}
 
+let deferredPrompt;
 
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('./serviceWorker.js')
-          .then(function(registration) {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-          });
-      });
-    }
-     
-    let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
+window.addEventListener("beforeinstallprompt", (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
 });
 
-document.getElementById('downloadAndroidApp').addEventListener('click', () => {
+document.getElementById("downloadAndroidApp").addEventListener("click", () => {
   if (deferredPrompt) {
     // Show the prompt
     deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
     deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the A2HS prompt');
+      if (choiceResult.outcome === "accepted") {
+        console.log("User accepted the A2HS prompt");
       }
       deferredPrompt = null;
     });
