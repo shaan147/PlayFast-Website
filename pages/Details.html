@@ -1,520 +1,669 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms and Conditions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terms and Conditions</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favion -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href=" ../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href=" ../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href=" ../images/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="manifest" href=" ../images/site.webmanifest"> -->
+    <link rel="manifest" href="../manifest.json" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .hoverEffect:hover {
+        color: #3b3b3b;
+      }
+      ul.pt-4 {
+        list-style-type: none; /* Remove default bullet style */
+        padding-left: 30px; /* Add padding to the left of the list */
+      }
 
-  <!-- Google Font  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- Favion -->
-  <link rel="apple-touch-icon" sizes="180x180" href=" ../images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href=" ../images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href=" ../images/favicon-16x16.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="manifest" href=" ../images/site.webmanifest"> -->
-  <link rel="manifest" href="../manifest.json">
-      <!-- Link Swiper's CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <style>
-    .hoverEffect:hover {
-      color: #3b3b3b;
+      ul.pt-4 li {
+        position: relative; /* Make the list items positioned relative */
+        line-height: 1.5; /* Adjust line height for better spacing */
+      }
 
-    }
-    ul.pt-4 {
-    list-style-type: none; /* Remove default bullet style */
-    padding-left: 30px; /* Add padding to the left of the list */
-}
+      ul.pt-4 li::before {
+        content: "•"; /* Use the bullet character as content */
+        color: black; /* Set bullet color */
+        font-size: 2em; /* Increase bullet size */
+        position: absolute; /* Position the bullet absolutely */
+        left: -30px; /* Adjust the position to place bullet before text */
+        top: 50%; /* Align bullet vertically in the middle of the list item */
+        transform: translateY(-50%); /* Adjust bullet position vertically */
+      }
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
 
-ul.pt-4 li {
-    position: relative; /* Make the list items positioned relative */
-    line-height: 1.5; /* Adjust line height for better spacing */
-}
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 800px;
+        height: auto;
+      }
 
-ul.pt-4 li::before {
-    content: "•"; /* Use the bullet character as content */
-    color: black; /* Set bullet color */
-    font-size: 2em; /* Increase bullet size */
-    position: absolute; /* Position the bullet absolutely */
-    left: -30px; /* Adjust the position to place bullet before text */
-    top: 50%; /* Align bullet vertically in the middle of the list item */
-    transform: translateY(-50%); /* Adjust bullet position vertically */
-}
-.swiper {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
 
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 800px;
-      height: auto;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-    }
-
-  </style>
-</head>
-
-<body class="d-flex flex-column min-vh-100">
-
-
-  <!-- Sidebar -->
-  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-    <div class="position-sticky">
-      <div class="list-group list-group-flush mx-3 mt-4">
-        <a href="Profile.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
-          <i class="fa fa-user fa-2x mb-2"></i>
-          <h5>My account</h5>
-        </a>
-        <a href="Games.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect activeYellow" aria-current="true">
-          <i class="fa fa-gamepad fa-2x mb-2"></i>
-          <h5>Games</h5>
-        </a>
-        <a href="Settings.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
-          <i class="fa fa-gear fa-2x mb-2"></i>
-          <h5>Settings</h5>
-        </a>
-
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a
+            href="/profile"
+            class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect"
+            aria-current="true"
+          >
+            <i class="fa fa-user fa-2x mb-2"></i>
+            <h5>My account</h5>
+          </a>
+          <a
+            href="/games"
+            class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect activeYellow"
+            aria-current="true"
+          >
+            <i class="fa fa-gamepad fa-2x mb-2"></i>
+            <h5>Games</h5>
+          </a>
+          <a
+            href="/settings"
+            class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect"
+            aria-current="true"
+          >
+            <i class="fa fa-gear fa-2x mb-2"></i>
+            <h5>Settings</h5>
+          </a>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Sidebar -->
+    </nav>
+    <!-- Sidebar -->
 
-  <!-- Navbar Start  -->
-  <nav class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="../images/playfast-logo.png" class="navbarlogo" alt=""></a>
-      <div class="nav-item dropdown d-none" id="showhide">
-        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="coloryellow">EN</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">FR</a></li>
-          <!-- <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-        </ul>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <!-- Updated class -->
-        <ul class="navbar-nav  mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="Matches.html">Matches</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Aboutus.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Contactus.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Term.html">Terms & Conditions</a>
-          </li>
-          <li class="nav-item">
-            <a class=" btn btn-primary px-3" href="Signup.html">Join Now</a>
-          </li>
-        
-        </ul>
-      </div>
-      <div class="float-end" id="notshow">
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <!-- Navbar Start  -->
+    <nav
+      class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="../images/playfast-logo.png" class="navbarlogo" alt=""
+        /></a>
+        <div class="nav-item dropdown d-none" id="showhide">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="coloryellow">EN</span>
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">FR</a></li>
             <!-- <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
         </div>
-      </div>
-    </div>
-  </nav>
-  <!-- Navbar End  -->
-
-
-  <!-- setion start  -->
-  <main style="margin-top: 58px; margin-bottom: 80px;">
-    <div class="p-4">
- <!-- Swiper -->
- <div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="../images/abouthero.png" />
-    </div>
-    <div class="swiper-slide">
-      <img src="../images/abouthero.png" />
-
-    </div>
-    <div class="swiper-slide">
-      <img src="../images/abouthero.png" />
-
-    </div>
-    <div class="swiper-slide">
-      <img src="../images/abouthero.png" />
-
-    </div>
-   
-  </div>
-  <div class="swiper-pagination"></div>
-</div>
-        
-    </div>
-
-    <div class="p-4">
-      <h1 class="text-center"> 8 Players Per Team <br> Court LAC 2</h1>
-      
-      <div class="row d-flex flex-row px-5 mx-2 my-5 justify-content-center align-content-center">
-        <div class="col-4">
-          <div class="row d-flex flex-row justify-content-center align-content-center">
-
-            <div class="col-4">
-
-              <img src="../images/image 2.png" class="detailsimagesset" alt="">
-            </div>
-            <div class="col-7 p-0">
-              <p class=" dtailfont breaklinefix"> 19:00 <br> Monday 10th Sep </p>
-            </div>
-          </div>
-
-
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <!-- Updated class -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/matches">Matches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/terms">Terms & Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary px-3" href="/signup">Join Now</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-4 align-content-center text-center padding-top-0">
-
-          <img src="../images/image 3.png" style="width: 60px;" alt="">
-          <span class="dtailfont breaklinefix"> 15 DT
-          </span>
-        </div>
-        <div class="col-4 align-content-center text-center padding-top-0">
-
-          <img src="../images/image 4.png" style="width: 60px;" alt="">
-          <span class="dtailfont breaklinefix"> 60 minutes
-          </span>
-        </div>
-      </div>
-
-
-      <div class="row justify-content-center align-items-center py-5 flex-row hoverEffect">
-        <div class="col-1">
-
-          <div class="float-end">
-            <img src="../images/image 5.png" class="fixImage" alt="">
-          </div>
-        </div>
-        <div class="col-5">
-
-          <div class="mx-auto text-left">
-            <span>6 vs 6: The host will change the players of each team to try to make a tie</span>
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row justify-content-center align-items-center pb-5 flex-row hoverEffect">
-        <div class="col-1">
-
-          <div class="float-end">
-            <img src="../images/Frame.png" class="fixImage" alt="">
-          </div>
-        </div>
-        <div class="col-5">
-
-          <div class="mx-auto text-left">
-            <span>Please be patient before 15 minutes of the match, the host will provide the pinnies</span>
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row justify-content-center align-items-center pb-5 flex-row hoverEffect">
-        <div class="col-1">
-
-          <div class="float-end">
-            <img src="../images/Frame-1.png" class="fixImage" alt="">
-          </div>
-        </div>
-        <div class="col-5">
-
-          <div class="mx-auto text-left">
-            <span>Remember the main goal is to have fun. Don’t forget to leave a review after the match</span>
-
-          </div>
-        </div>
-
-      </div>
-      <hr>
-
-      <div class="p-4">
-        <h3 class="float-end">11/12 Players</h3>
-        <h1>Who is Participating?</h1>
-        <h3 class="displayblockmobile" style="display: none;">11/12 Players</h3>
-
-      </div>
-      <div class="row d-flex flex-row px-5 mx-2 my-5">
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">1)
-          </span>
-          <img src="../images/Avatar Image-1.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">2)
-          </span>
-          <img src="../images/Avatar Image-2.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">3)
-          </span>
-          <img src="../images/Avatar Image-3.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">4)
-          </span>
-          <img src="../images/Avatar Image.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">5)
-          </span>
-          <img src="../images/Avatar Image-1.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">6)
-          </span>
-          <img src="../images/Avatar Image-2.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">7)
-          </span>
-          <img src="../images/Avatar Image-3.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">8)
-          </span>
-          <img src="../images/Avatar Image.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">9)
-          </span>
-          <img src="../images/Avatar Image-1.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">10)
-          </span>
-          <img src="../images/Avatar Image-2.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-        <div class="col-3 align-content-center text-center mb-5">
-
-          <span class="dtailfont pe-4 me-2">11)
-          </span>
-          <img src="../images/Avatar Image-3.png" style="width: 100px;" alt="">
-          <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
-        </div>
-
-
-
-      </div>
-      <hr>
-      <div class="p-4">
-        <h1 class="mb-5">Where is the court?</h1>
-        <h4 class="mb-5">Court loc 2</h4>
-        <p style="font-size:  1.2rem;">25 Rue Victor Hugo,8012,Tunis,Tunisie</p>
-        <div class="row d-flex justify-content-center align-content-center">
-          <div class="col-6 d-flex flex-column justify-content-center">
-            <p style="font-size:  1.125rem;">Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque scelerisque mi non urna condimentum, nec commodo massa euismod. Nunc in sem in metus lobortis facilisis. Vestibulum mi ligula, pellentesque in tincidunt in, vestibulum sed est. Mauris eget imperdiet arcu, ac laoreet ex. Proin et fringilla mauris, eget tempor ligula. Mauris dictum odio et ipsum pharetra, quis mollis tortor condimentum. Nam mauris purus, elementum at cursus at, vestibulum non diam. </p>
-          </div>
-          <div class="col-6 d-flex flex-column justify-content-center">
-            <img src="../images/map.png" alt="">
-          </div>
-        </div>
-
-      </div>
-      <hr>
-      <div class="p-4">
-        <h1 class="mb-5">The Host</h1>
-        <div class="row d-flex justify-content-center align-content-center">
-
-          <div class="col-6 d-flex flex-column justify-content-center">
-            <img src="../images/creator.png" alt="">
-          </div>
-          <div class="col-6 d-flex flex-column justify-content-center p-5 padding-top-0">
-            <h5>Hamza Laouini</h5>
-            <p style="font-size:  1.125rem;">Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque scelerisque mi non urna condimentum, nec commodo massa euismod</p>
-          </div>
-        </div>
-
-      </div>
-      <hr>
-      <div class="p-4">
-        <h1 class="mb-5">Chat with players</h1>
-        <div class="p-4 borderGrey mb-5">
-          <p>Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque scelerisque mi non urna condimentum, nec commodo massa euismod.Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </div>
-        <div class="p-4 borderGrey mb-5">
-          <p>Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque scelerisque mi non urna condimentum, nec commodo massa euismod.Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </div>
-        <div class="p-4 borderGrey mb-5">
-          <p>Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque scelerisque mi non urna condimentum, nec commodo massa euismod.Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </div>
-        <div class="row">
-
-          <div class="col-10">
-            <input type="text" class="form-control login-form-control" id="email"  placeholder="Write a message......">
-        
-          </div>
-          
-          <div class="col-2">
-           <button class="float-end px-5 py-2  borderGrey bg-transparent" style="font-size: 16px; font-weight: 500;">Add</button>
-          </div>
-        </div>
-
-      </div>
-      <hr>
-      <div class="p-4">
-  
-        <div class="row mb-5">
-
-          <div class="col-6 px-5">
-            <h1>
-              How does it work?
-            </h1>
-            <ul class="pt-4 fa-2x">
-              <li class="mb-2" style="font-size: 16px;">You arrive at the site before 15 minutes</li>
-              <li class="mb-2" style="font-size: 16px;">The host divides into two teams</li>
-              <li class="mb-2" style="font-size: 16px;">Each person will play as a goalkeeper 
-                once</li>
-              <li class="mb-2" style="font-size: 16px;">Teams will be swapped to make a
-                balance</li>
-            </ul>
-        
-          </div>
-          
-          <div class="col-6 px-5">
-            <h1>
-              What is Play Fast?
-            </h1>
-            <ul class="pt-4 fa-2x">
-              <li class="mb-2" style="font-size: 16px;">Play Fast is a community of amateur 
-                gamers that started in Tunisia</li>
-              <li class="mb-2" style="font-size: 16px;">Our goal is to connect and bring together
-                all people who want to play a sport</li>
-              <li class="mb-2" style="font-size: 16px;">Our mission is to allow everyone to find
-                a match every day near you</li>
-              <li class="mb-2" style="font-size: 16px;">Our mission is to allow everyone to find
-                a match every day near you</li>
-                <li class="mb-2" style="font-size: 16px;">We believe everyone should be able to 
-                  play safely </li>
-                  <li class="mb-2" style="font-size: 16px;">On-pitch violence will result in a an 
-                    immediate ban on the game and the app</li>
+        <div class="float-end" id="notshow">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="coloryellow">EN</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">FR</a></li>
+              <!-- <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
             </ul>
           </div>
         </div>
-
-        <h1 class="mb-5">Take into account:</h1>
-        <ul class="pt-4 fa-2x">
-          <li class="mb-2" style="font-size: 16px;">If you cannot play, withdraw at least 24 hours before the game, you will then be refunded
-            the credits in your account which can be spent on another match  </li>
-          <li class="mb-2" style="font-size: 16px;">If the match is cancelled, you will be refunded the game credits to your account</li>
-          <li class="mb-2" style="font-size: 16px;">We will cancel the game if the pitch administration cancels our reservation, if the weather
-            is really bad(outdoor pitches) or if the number of players is insufficient for the match to 
-            take place accordingly(less than 80% of the squad planned total)</li>
-          <li class="mb-2" style="font-size: 16px;">You must be 18 years or older to participate</li>
-            <li class="mb-2" style="font-size: 16px;">You can pay directly by credit card or at office in your city</li>
-      
-        </ul>
-
-
       </div>
-     
-     
-      <hr>
-      <div class="row p-4">
-        <div class="col-12 text-center">
-          <a href="Signin.html" class="btn btn-primary">Sign in to join</a>
+    </nav>
+    <!-- Navbar End  -->
+
+    <!-- setion start  -->
+    <main style="margin-top: 58px; margin-bottom: 80px">
+      <div class="p-4">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../images/abouthero.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/abouthero.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/abouthero.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/abouthero.png" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-     
 
+      <div class="p-4">
+        <h1 class="text-center">
+          8 Players Per Team <br />
+          Court LAC 2
+        </h1>
 
+        <div
+          class="row d-flex flex-row px-5 mx-2 my-5 justify-content-center align-content-center"
+        >
+          <div class="col-4">
+            <div
+              class="row d-flex flex-row justify-content-center align-content-center"
+            >
+              <div class="col-4">
+                <img
+                  src="../images/image 2.png"
+                  class="detailsimagesset"
+                  alt=""
+                />
+              </div>
+              <div class="col-7 p-0">
+                <p class="dtailfont breaklinefix">
+                  19:00 <br />
+                  Monday 10th Sep
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 align-content-center text-center padding-top-0">
+            <img src="../images/image 3.png" style="width: 60px" alt="" />
+            <span class="dtailfont breaklinefix"> 15 DT </span>
+          </div>
+          <div class="col-4 align-content-center text-center padding-top-0">
+            <img src="../images/image 4.png" style="width: 60px" alt="" />
+            <span class="dtailfont breaklinefix"> 60 minutes </span>
+          </div>
+        </div>
 
+        <div
+          class="row justify-content-center align-items-center py-5 flex-row hoverEffect"
+        >
+          <div class="col-1">
+            <div class="float-end">
+              <img src="../images/image 5.png" class="fixImage" alt="" />
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="mx-auto text-left">
+              <span
+                >6 vs 6: The host will change the players of each team to try to
+                make a tie</span
+              >
+            </div>
+          </div>
+        </div>
 
+        <div
+          class="row justify-content-center align-items-center pb-5 flex-row hoverEffect"
+        >
+          <div class="col-1">
+            <div class="float-end">
+              <img src="../images/Frame.png" class="fixImage" alt="" />
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="mx-auto text-left">
+              <span
+                >Please be patient before 15 minutes of the match, the host will
+                provide the pinnies</span
+              >
+            </div>
+          </div>
+        </div>
 
+        <div
+          class="row justify-content-center align-items-center pb-5 flex-row hoverEffect"
+        >
+          <div class="col-1">
+            <div class="float-end">
+              <img src="../images/Frame-1.png" class="fixImage" alt="" />
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="mx-auto text-left">
+              <span
+                >Remember the main goal is to have fun. Don’t forget to leave a
+                review after the match</span
+              >
+            </div>
+          </div>
+        </div>
+        <hr />
 
+        <div class="p-4">
+          <h3 class="float-end">11/12 Players</h3>
+          <h1>Who is Participating?</h1>
+          <h3 class="displayblockmobile" style="display: none">
+            11/12 Players
+          </h3>
+        </div>
+        <div class="row d-flex flex-row px-5 mx-2 my-5">
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">1) </span>
+            <img
+              src="../images/Avatar Image-1.png"
+              style="width: 100px"
+              alt=""
+            />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">2) </span>
+            <img
+              src="../images/Avatar Image-2.png"
+              style="width: 100px"
+              alt=""
+            />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">3) </span>
+            <img
+              src="../images/Avatar Image-3.png"
+              style="width: 100px"
+              alt=""
+            />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">4) </span>
+            <img src="../images/Avatar Image.png" style="width: 100px" alt="" />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">5) </span>
+            <img
+              src="../images/Avatar Image-1.png"
+              style="width: 100px"
+              alt=""
+            />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">6) </span>
+            <img
+              src="../images/Avatar Image-2.png"
+              style="width: 100px"
+              alt=""
+            />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">7) </span>
+            <img
+              src="../images/Avatar Image-3.png"
+              style="width: 100px"
+              alt=""
+            />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">8) </span>
+            <img src="../images/Avatar Image.png" style="width: 100px" alt="" />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">9) </span>
+            <img
+              src="../images/Avatar Image-1.png"
+              style="width: 100px"
+              alt=""
+            />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">10) </span>
+            <img
+              src="../images/Avatar Image-2.png"
+              style="width: 100px"
+              alt=""
+            />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+          <div class="col-3 align-content-center text-center mb-5">
+            <span class="dtailfont pe-4 me-2">11) </span>
+            <img
+              src="../images/Avatar Image-3.png"
+              style="width: 100px"
+              alt=""
+            />
+            <p class="text-center ps-5 dtailfont pt-3">Lorem Ipsum</p>
+          </div>
+        </div>
+        <hr />
+        <div class="p-4">
+          <h1 class="mb-5">Where is the court?</h1>
+          <h4 class="mb-5">Court loc 2</h4>
+          <p style="font-size: 1.2rem">25 Rue Victor Hugo,8012,Tunis,Tunisie</p>
+          <div class="row d-flex justify-content-center align-content-center">
+            <div class="col-6 d-flex flex-column justify-content-center">
+              <p style="font-size: 1.125rem">
+                Maecenas in felis ultricies, mollis eros a, convallis metus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                erat volutpat. Cras sit amet ornare augue, vel eleifend sem.
+                Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt
+                urna. Quisque scelerisque mi non urna condimentum, nec commodo
+                massa euismod. Nunc in sem in metus lobortis facilisis.
+                Vestibulum mi ligula, pellentesque in tincidunt in, vestibulum
+                sed est. Mauris eget imperdiet arcu, ac laoreet ex. Proin et
+                fringilla mauris, eget tempor ligula. Mauris dictum odio et
+                ipsum pharetra, quis mollis tortor condimentum. Nam mauris
+                purus, elementum at cursus at, vestibulum non diam.
+              </p>
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center">
+              <img src="../images/map.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="p-4">
+          <h1 class="mb-5">The Host</h1>
+          <div class="row d-flex justify-content-center align-content-center">
+            <div class="col-6 d-flex flex-column justify-content-center">
+              <img src="../images/creator.png" alt="" />
+            </div>
+            <div
+              class="col-6 d-flex flex-column justify-content-center p-5 padding-top-0"
+            >
+              <h5>Hamza Laouini</h5>
+              <p style="font-size: 1.125rem">
+                Maecenas in felis ultricies, mollis eros a, convallis metus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                erat volutpat. Cras sit amet ornare augue, vel eleifend sem.
+                Cras vitae mauris convallis, tincidunt nisl iaculis, tincidunt
+                urna. Quisque scelerisque mi non urna condimentum, nec commodo
+                massa euismod
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="p-4">
+          <h1 class="mb-5">Chat with players</h1>
+          <div class="p-4 borderGrey mb-5">
+            <p>
+              Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat
+              volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae
+              mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque
+              scelerisque mi non urna condimentum, nec commodo massa
+              euismod.Maecenas in felis ultricies, mollis eros a, convallis
+              metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div class="p-4 borderGrey mb-5">
+            <p>
+              Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat
+              volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae
+              mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque
+              scelerisque mi non urna condimentum, nec commodo massa
+              euismod.Maecenas in felis ultricies, mollis eros a, convallis
+              metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div class="p-4 borderGrey mb-5">
+            <p>
+              Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat
+              volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae
+              mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque
+              scelerisque mi non urna condimentum, nec commodo massa
+              euismod.Maecenas in felis ultricies, mollis eros a, convallis
+              metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <input
+                type="text"
+                class="form-control login-form-control"
+                id="email"
+                placeholder="Write a message......"
+              />
+            </div>
+
+            <div class="col-2">
+              <button
+                class="float-end px-5 py-2 borderGrey bg-transparent"
+                style="font-size: 16px; font-weight: 500"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="p-4">
+          <div class="row mb-5">
+            <div class="col-6 px-5">
+              <h1>How does it work?</h1>
+              <ul class="pt-4 fa-2x">
+                <li class="mb-2" style="font-size: 16px">
+                  You arrive at the site before 15 minutes
+                </li>
+                <li class="mb-2" style="font-size: 16px">
+                  The host divides into two teams
+                </li>
+                <li class="mb-2" style="font-size: 16px">
+                  Each person will play as a goalkeeper once
+                </li>
+                <li class="mb-2" style="font-size: 16px">
+                  Teams will be swapped to make a balance
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 px-5">
+              <h1>What is Play Fast?</h1>
+              <ul class="pt-4 fa-2x">
+                <li class="mb-2" style="font-size: 16px">
+                  Play Fast is a community of amateur gamers that started in
+                  Tunisia
+                </li>
+                <li class="mb-2" style="font-size: 16px">
+                  Our goal is to connect and bring together all people who want
+                  to play a sport
+                </li>
+                <li class="mb-2" style="font-size: 16px">
+                  Our mission is to allow everyone to find a match every day
+                  near you
+                </li>
+                <li class="mb-2" style="font-size: 16px">
+                  Our mission is to allow everyone to find a match every day
+                  near you
+                </li>
+                <li class="mb-2" style="font-size: 16px">
+                  We believe everyone should be able to play safely
+                </li>
+                <li class="mb-2" style="font-size: 16px">
+                  On-pitch violence will result in a an immediate ban on the
+                  game and the app
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h1 class="mb-5">Take into account:</h1>
+          <ul class="pt-4 fa-2x">
+            <li class="mb-2" style="font-size: 16px">
+              If you cannot play, withdraw at least 24 hours before the game,
+              you will then be refunded the credits in your account which can be
+              spent on another match
+            </li>
+            <li class="mb-2" style="font-size: 16px">
+              If the match is cancelled, you will be refunded the game credits
+              to your account
+            </li>
+            <li class="mb-2" style="font-size: 16px">
+              We will cancel the game if the pitch administration cancels our
+              reservation, if the weather is really bad(outdoor pitches) or if
+              the number of players is insufficient for the match to take place
+              accordingly(less than 80% of the squad planned total)
+            </li>
+            <li class="mb-2" style="font-size: 16px">
+              You must be 18 years or older to participate
+            </li>
+            <li class="mb-2" style="font-size: 16px">
+              You can pay directly by credit card or at office in your city
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+        <div class="row p-4">
+          <div class="col-12 text-center">
+            <a href="/signin" class="btn btn-primary">Sign in to join</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- setion end  -->
+
+    <!-- back to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer Menu Start -->
+
+    <div
+      class="fixed-bottom d-none displayblockmobile"
+      style="background: white; border-top: 1px solid #d1d5db"
+    >
+      <div class="row">
+        <div class="footermenudiv">
+          <a
+            href="/profile"
+            class="text-decoration-none text-black"
+            aria-current="true"
+          >
+            <i class="fa fa-user mb-2 sizefoooter"></i>
+            <p>My Account</p>
+          </a>
+        </div>
+        <div class="footermenudiv">
+          <a
+            href="/games"
+            class="text-decoration-none text-black activeYellow"
+            aria-current="true"
+          >
+            <i class="fa fa-gamepad mb-2 sizefoooter"></i>
+            <p>Games</p>
+          </a>
+        </div>
+        <div class="footermenudiv">
+          <a
+            href="/settings"
+            class="text-decoration-none text-black"
+            aria-current="true"
+          >
+            <i class="fa fa-gear mb-2 sizefoooter"></i>
+            <p>Settings</p>
+          </a>
+        </div>
+      </div>
     </div>
-  </main>
 
-  <!-- setion end  -->
+    <!-- Footer Menu End -->
 
-
-  <!-- back to top  -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-
-  <!-- Footer Menu Start -->
-
-  <div class="fixed-bottom d-none displayblockmobile" style="background: white; border-top: 1px solid #D1D5DB;">
-    <div class="row">
-      
-      <div class="footermenudiv">
-        <a href="Profile.html" class="text-decoration-none text-black" aria-current="true">
-        <i class="fa fa-user mb-2 sizefoooter"></i>
-        <p>My Account</p>
-      </a>
-      </div>
-
-      <div class="footermenudiv">
-        <a href="Games.html" class="text-decoration-none text-black activeYellow" aria-current="true">
-        <i class="fa fa-gamepad mb-2 sizefoooter"></i>
-        <p>Games</p>
-      </a>
-      </div>
-      <div class="footermenudiv">
-        <a href="Settings.html" class="text-decoration-none text-black" aria-current="true">
-        <i class="fa fa-gear mb-2 sizefoooter"></i>
-        <p>Settings</p>
-      </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer Menu End -->
-
-  <!-- <footer class="footer p-3 footerBackground mt-auto zindexback">
+    <!-- <footer class="footer p-3 footerBackground mt-auto zindexback">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -523,11 +672,16 @@ ul.pt-4 li::before {
       </div>
     </div>
   </footer> -->
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src=" ../scripts/main.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src=" ../scripts/main.js"></script>
+  </body>
 </html>

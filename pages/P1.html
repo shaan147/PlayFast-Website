@@ -98,22 +98,21 @@
   <!-- Sidebar -->
   <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
     <div class="position-sticky">
-      <div class="list-group list-group-flush mx-3 mt-4">
-        <a href="Profile.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
-          <i class="fa fa-user fa-2x mb-2"></i>
-          <h5>My account</h5>
-        </a>
-        <a href="Games.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect activeYellow" aria-current="true">
-          <i class="fa fa-gamepad fa-2x mb-2"></i>
-          <h5>Games</h5>
-        </a>
-        <a href="Settings.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
-          <i class="fa fa-gear fa-2x mb-2"></i>
-          <h5>Settings</h5>
-        </a>
-
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a href="/profile" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect activeYellow" aria-current="true">
+            <i class="fa fa-user fa-2x mb-2"></i>
+            <h5>My account</h5>
+          </a>
+          <a href="/games" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
+            <i class="fa fa-gamepad fa-2x mb-2"></i>
+            <h5>Games</h5>
+          </a>
+          <a href="/settings" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
+            <i class="fa fa-gear fa-2x mb-2"></i>
+            <h5>Settings</h5>
+          </a>
+        </div>
       </div>
-    </div>
   </nav>
   <!-- Sidebar -->
 
@@ -121,7 +120,7 @@
   <!-- Navbar Start  -->
   <nav class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="../images/playfast-logo.png" class="navbarlogo" alt=""></a>
+      <a class="navbar-brand" href="/"><img src="../images/playfast-logo.png" class="navbarlogo" alt=""></a>
       <div class="nav-item dropdown d-none" id="showhide">
         <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <span class="coloryellow">EN</span>
@@ -136,28 +135,28 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <!-- Updated class -->
-        <ul class="navbar-nav  mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="Matches.html">Matches</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Aboutus.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Contactus.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Term.html">Terms & Conditions</a>
-          </li>
-          <li class="nav-item">
-            <a class=" btn btn-primary px-3" href="Signup.html">Join Now</a>
-          </li>
-
-        </ul>
+       <!-- Updated class -->
+       <ul class="navbar-nav  mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="/" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/matches" >Matches</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  " href="/about" >About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/contact"   >Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/terms" >Terms & Conditions</a>
+        </li>
+        <li class="nav-item">
+          <a class=" btn btn-primary px-3" href="/signup" >Join Now</a>
+        </li>
+      
+      </ul>
       </div>
       <div class="float-end" id="notshow">
         <div class="nav-item dropdown">
@@ -340,15 +339,15 @@
 <div class="modal fade" id="paymentModal" aria-hidden="true" aria-labelledby="paymentModalLabel" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content rounded-4 backgroundYellow">
-      <form action="P2.html" method="POST">
+      <form method="POST">
         <div class="modal-header border-0">
         </div>
         <div class="modal-body px-5 text-center mb-2 border-0">
           <p class="mb-1">Are you sure you want to pay by credit card?</p>
         </div>
         <div class="modal-footer justify-content-end border-0">
-          <a href="#" class="text-black pe-1" data-bs-dismiss="modal" aria-label="Close">No</a>
-          <a href="P3.html" class="text-white">Yes</a>
+          <a href="/p1" class="text-black pe-1" data-bs-dismiss="modal" aria-label="Close">No</a>
+          <a href="/p3" class="text-white">Yes</a>
         </div>
       </form>
     </div>
@@ -361,7 +360,7 @@
   <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content rounded-4 backgroundYellow">
-        <form action="P2.html" method="POST">
+        <form method="POST">
 
           <div class="modal-header border-0">
           </div>
@@ -371,7 +370,7 @@
           </div>
           <div class="modal-footer justify-content-end border-0">
             <a href="" class="text-black pe-1" data-bs-dismiss="modal" aria-label="Close">Cancel</a>
-            <a href="P3.html" class="text-white">Yes</a>
+            <a href="/p3" class="text-white">Yes</a>
           </div>
         </form>
       </div>
@@ -385,7 +384,7 @@
   <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content rounded-4 backgroundYellow">
-        <form action="P2.html" method="POST">
+        <form method="POST">
 
           <div class="modal-header border-0">
             <button type="button" class="btn-close" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal"></button>
@@ -413,27 +412,25 @@
 
   <div class="fixed-bottom d-none displayblockmobile" style="background: white; border-top: 1px solid #D1D5DB;">
     <div class="row">
-
-      <div class="footermenudiv">
-        <a href="Profile.html" class="text-decoration-none text-black" aria-current="true">
+        <div class="footermenudiv">
+          <a href="/profile" class="text-decoration-none text-black" aria-current="true">
           <i class="fa fa-user mb-2 sizefoooter"></i>
           <p>My Account</p>
         </a>
-      </div>
-
-      <div class="footermenudiv">
-        <a href="Games.html" class="text-decoration-none text-black activeYellow" aria-current="true">
+        </div>
+        <div class="footermenudiv">
+          <a href="/games" class="text-decoration-none text-black activeYellow" aria-current="true">
           <i class="fa fa-gamepad mb-2 sizefoooter"></i>
           <p>Games</p>
         </a>
-      </div>
-      <div class="footermenudiv">
-        <a href="Settings.html" class="text-decoration-none text-black" aria-current="true">
+        </div>
+        <div class="footermenudiv">
+          <a href="/settings" class="text-decoration-none text-black" aria-current="true">
           <i class="fa fa-gear mb-2 sizefoooter"></i>
           <p>Settings</p>
         </a>
-      </div>
-    </div>
+        </div>
+  </div>
   </div>
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
 

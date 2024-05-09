@@ -1,54 +1,33 @@
-// serviceWorker.js
+const staticDevCoffee = "sntt-portal-v1";
+const assets = [
+  "/",
+  "/index.html",
+  "/styles/style.css",
+  "/styles/swiper-bundle.min.css",
+  "/scripts/main.min.js",
+  "/scripts/events.js",
+  "/scripts/router.js",  
+  "/scripts/swiper-bundle.esm.browser.min.js",
+  "/favicon.ico",
+  "/pages/about.html",
+  "/pages/contact.html",
+  "/pages/logistiques-marchandises.html",
+  "/pages/main.html",
 
-// Cache name
-const CACHE_NAME = 'playfast-cache-v1';
-
-// Files to cache
-const urlsToCache = [
-    '/',
-    '/index.html',
-    '/Aboutus.html',
-    '/Contactus.html',
-    '/Term.html',
-    '/styles/styles.css',
-    '/scripts/main.js',
-    // Add other files to cache here
 ];
 
-// Install service worker
-self.addEventListener('install', event => {
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then(cache => {
-                return cache.addAll(urlsToCache);
-            })
-    );
+self.addEventListener("install", installEvent => {
+  installEvent.waitUntil(
+    caches.open(staticDevCoffee).then(cache => {
+      cache.addAll(assets);
+    })
+  );
 });
 
-// Activate service worker and remove old caches
-self.addEventListener('activate', event => {
-    event.waitUntil(
-        caches.keys().then(cacheNames => {
-            return Promise.all(
-                cacheNames.filter(cacheName => {
-                    return cacheName.startsWith('playfast-cache-v1') && cacheName !== CACHE_NAME;
-                }).map(cacheName => {
-                    return caches.delete(cacheName);
-                })
-            );
-        })
-    );
-});
-
-// Fetch resources from cache first, then network
-self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(response => {
-                if (response) {
-                    return response;
-                }
-                return fetch(event.request);
-            })
-    );
+self.addEventListener("fetch", fetchEvent => {
+  fetchEvent.respondWith(
+    caches.match(fetchEvent.request).then(res => {
+      return res || fetch(fetchEvent.request);
+    })
+  );
 });

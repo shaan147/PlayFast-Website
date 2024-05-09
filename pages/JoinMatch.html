@@ -1,271 +1,386 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Games</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Games</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favion -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href=" ../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href=" ../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href=" ../images/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="manifest" href=" ../images/site.webmanifest"> -->
+    <link rel="manifest" href="../manifest.json" />
+    <style>
+      .hoverEffect:hover {
+        color: #3b3b3b;
+      }
+    </style>
+  </head>
 
-  <!-- Google Font  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- Favion -->
-  <link rel="apple-touch-icon" sizes="180x180" href=" ../images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href=" ../images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href=" ../images/favicon-16x16.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="manifest" href=" ../images/site.webmanifest"> -->
-  <link rel="manifest" href="../manifest.json">
-  <style>
-    .hoverEffect:hover {
-      color: #3b3b3b;
-
-    }
-  </style>
-</head>
-
-<body class="d-flex flex-column min-vh-100">
-
-
-  <!-- Sidebar -->
-  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-    <div class="position-sticky">
-      <div class="list-group list-group-flush mx-3 mt-4">
-        <a href="Profile.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
-          <i class="fa fa-user fa-2x mb-2"></i>
-          <h5>My account</h5>
-        </a>
-        <a href="Games.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect activeYellow" aria-current="true">
-          <i class="fa fa-gamepad fa-2x mb-2"></i>
-          <h5>Games</h5>
-        </a>
-        <a href="Settings.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
-          <i class="fa fa-gear fa-2x mb-2"></i>
-          <h5>Settings</h5>
-        </a>
-
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a
+            href="/profile"
+            class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect activeYellow"
+            aria-current="true"
+          >
+            <i class="fa fa-user fa-2x mb-2"></i>
+            <h5>My account</h5>
+          </a>
+          <a
+            href="/games"
+            class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect"
+            aria-current="true"
+          >
+            <i class="fa fa-gamepad fa-2x mb-2"></i>
+            <h5>Games</h5>
+          </a>
+          <a
+            href="/settings"
+            class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect"
+            aria-current="true"
+          >
+            <i class="fa fa-gear fa-2x mb-2"></i>
+            <h5>Settings</h5>
+          </a>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Sidebar -->
+    </nav>
+    <!-- Sidebar -->
 
-
-  <!-- Navbar Start  -->
-  <nav class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="../images/playfast-logo.png" class="navbarlogo" alt=""></a>
-      <div class="nav-item dropdown d-none" id="showhide">
-        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="coloryellow">EN</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">FR</a></li>
-          <!-- <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-        </ul>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <!-- Updated class -->
-        <ul class="navbar-nav  mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="Matches.html">Matches</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Aboutus.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Contactus.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Term.html">Terms & Conditions</a>
-          </li>
-          <li class="nav-item">
-            <a class=" btn btn-primary px-3" href="Signup.html">Join Now</a>
-          </li>
-        
-        </ul>
-      </div>
-      <div class="float-end" id="notshow">
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <!-- Navbar Start  -->
+    <nav
+      class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="../images/playfast-logo.png" class="navbarlogo" alt=""
+        /></a>
+        <div class="nav-item dropdown d-none" id="showhide">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="coloryellow">EN</span>
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">FR</a></li>
             <!-- <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
         </div>
-      </div>
-    </div>
-  </nav>
-  <!-- Navbar End  -->
-
-
-  <main style=" margin-bottom: 80px;" class="mt-90px">
-    <div class="row d-flex flex-row">
-      <div class="container pt-4 padding-0">
-        <!-- setion start  -->
-
-
-
-        <div class="pt-5 col-9">
-          <div class="row align-items-center mb-4">
-            <div class="table-responsive overflox-x-hidden">
-              <table class="table" id="transactionTable">
-                <tbody>
-                  <tr class="colorgrey50 d-flex mb-4">
-                    <td class=" align-items-center justify-content-center w-50 width-200px"> Court loc 2
-                      <p class=" mb-0 medium22">Outdoor 6 vs 6</p>
-                      <p class="mb-0">Monday,10 September at 19:00</p>
-                    </td>
-                
-            
-                    <td class="d-flex align-items-center justify-content-center w-50"> <img src="../images/court.png" alt=""></td>
-                  </tr>
-         
-
-                </tbody>
-              </table>
-            </div>
-
-          </div>
-          <div class="row mt-5 px-5 padding-0">
-            <div class="table-responsive overflox-x-hidden">
-              <table class="table" id="table1">
-                <tbody>
-                  <tr class="colorgrey50 d-flex mb-4" id="friendRow">
-                    <td class=" align-items-center justify-content-center w-25 text-end width-100px"> <img src="../images/Avatar Image-1.png" alt=""></td>
-                    <td class="d-flex align-items-center  width-30 width-40-reponsive">
-                      <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p>
-                    </td>
-                    <td class="d-flex align-items-center justify-content-center w-25">
-                      <p class="mb-0">15 DT</p>
-                    </td>
-                    
-                <td class="d-flex align-items-center justify-content-center w-25">
-
-              </td>
-                  </tr>
-           
-                 
-                <!-- Total row -->
-    <tr class="colorgrey50 d-flex mb-0" id="totalRow">
-      <td class="align-items-center justify-content-center w-25 text-end"></td>
-      <td class="d-flex align-items-center width-30"></td>
-      <td class="d-flex align-items-center justify-content-center w-25">
-          <p class="mb-0 medium22">Total: 15 DT</p>
-      </td>
-  </tr>
-
-                </tbody>
-              </table>
-              
-            </div>
-            <a href="" class="text-center" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add a Friend</a>
-          </div>
-          <hr>
-          <div class="row px-5 py-4">
-
-            <div class="col-9 me-5">
-              <input type="text" class="form-control login-form-control" id="code" placeholder="Promo code">
-
-            </div>
-
-            <div class="col-2">
-              <button class="float-end px-5 py-2  borderGrey bg-transparent" style="font-size: 16px; font-weight: 500;">Add</button>
-            </div>
-          </div>
-          <hr>
-          <div class="row p-4 mb-5">
-            <div class="col-12 text-center">
-              <a href="PromoAdded.html" class="btn btn-primary">Play</a>
-            </div>
-          </div>
-
-
-
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <!-- Updated class -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/matches">Matches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/terms">Terms & Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary px-3" href="/signup">Join Now</a>
+            </li>
+          </ul>
         </div>
-
-
-
-
-      </div>
-    </div>
-    </div>
-  </main>
-
-  <!-- setion end  -->
-
-<!-- Modal Start 5 -->
-<div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content rounded-4 backgroundYellow">
-          <div class="modal-header  border-0">
-              <h1 class="modal-title fs-5 ms-3" id="exampleModalToggleLabel5">Add a friend</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="float-end" id="notshow">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="coloryellow">EN</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">FR</a></li>
+              <!-- <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
           </div>
-          <form id="addFriendForm" method="POST">
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End  -->
 
-              <div class="modal-body px-5 text-center mb-2 border-0">
-                  <input type="text" placeholder="Please enter only your friend's first and last name" name="name" class="form-control mb-3">
-                  <input type="file" name="picture" class="form-control mb-3">
+    <main style="margin-bottom: 80px" class="mt-90px">
+      <div class="row d-flex flex-row">
+        <div class="container pt-4 padding-0">
+          <!-- setion start  -->
+
+          <div class="pt-5 col-9">
+            <div class="row align-items-center mb-4">
+              <div class="table-responsive overflox-x-hidden">
+                <table class="table" id="transactionTable">
+                  <tbody>
+                    <tr class="colorgrey50 d-flex mb-4">
+                      <td
+                        class="align-items-center justify-content-center w-50 width-200px"
+                      >
+                        Court loc 2
+                        <p class="mb-0 medium22">Outdoor 6 vs 6</p>
+                        <p class="mb-0">Monday,10 September at 19:00</p>
+                      </td>
+
+                      <td
+                        class="d-flex align-items-center justify-content-center w-50"
+                      >
+                        <img src="../images/court.png" alt="" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="modal-footer border-0">
-                  <button type="button" class="btn m-0 bg-white borderGrey" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
-                  <button type="submit" class="btn m-0 bg-white borderGrey">Add</button>
+            </div>
+            <div class="row mt-5 px-5 padding-0">
+              <div class="table-responsive overflox-x-hidden">
+                <table class="table" id="table1">
+                  <tbody>
+                    <tr class="colorgrey50 d-flex mb-4" id="friendRow">
+                      <td
+                        class="align-items-center justify-content-center w-25 text-end width-100px"
+                      >
+                        <img src="../images/Avatar Image-1.png" alt="" />
+                      </td>
+                      <td
+                        class="d-flex align-items-center width-30 width-40-reponsive"
+                      >
+                        <p class="ms-4 mb-0 medium22 text-left">
+                          Michael Johnson
+                        </p>
+                      </td>
+                      <td
+                        class="d-flex align-items-center justify-content-center w-25"
+                      >
+                        <p class="mb-0">15 DT</p>
+                      </td>
+
+                      <td
+                        class="d-flex align-items-center justify-content-center w-25"
+                      ></td>
+                    </tr>
+
+                    <!-- Total row -->
+                    <tr class="colorgrey50 d-flex mb-0" id="totalRow">
+                      <td
+                        class="align-items-center justify-content-center w-25 text-end"
+                      ></td>
+                      <td class="d-flex align-items-center width-30"></td>
+                      <td
+                        class="d-flex align-items-center justify-content-center w-25"
+                      >
+                        <p class="mb-0 medium22">Total: 15 DT</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p
+                class="text-center link-primary"
+                onclick="showModal('exampleModalToggle5')"
+              >
+                Add a Friend
+              </p>
+            </div>
+            <hr />
+            <div class="row px-5 py-4">
+              <div class="col-9 me-5">
+                <input
+                  type="text"
+                  class="form-control login-form-control"
+                  id="code"
+                  placeholder="Promo code"
+                />
               </div>
 
+              <div class="col-2">
+                <button
+                  class="float-end px-5 py-2 borderGrey bg-transparent"
+                  style="font-size: 16px; font-weight: 500"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+            <hr />
+            <div class="row p-4 mb-5">
+              <div class="col-12 text-center">
+                <a href="/promoadded" class="btn btn-primary">Play</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- setion end  -->
+
+    <!-- Modal Start 5 -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle5"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel5"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 backgroundYellow">
+          <div class="modal-header border-0">
+            <h1 class="modal-title fs-5 ms-3" id="exampleModalToggleLabel5">
+              Add a friend
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form id="addFriendForm">
+            <div class="modal-body px-5 text-center mb-2 border-0">
+              <input
+                type="text"
+                placeholder="Please enter only your friend's first and last name"
+                name="name"
+                class="form-control mb-3"
+              />
+              <input type="file" name="picture" class="form-control mb-3" />
+            </div>
+            <div class="modal-footer border-0">
+              <button
+                type="button"
+                class="btn m-0 bg-white borderGrey"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                Cancel
+              </button>
+              <button
+                class="btn m-0 bg-white borderGrey"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                Add
+              </button>
+            </div>
           </form>
-      </div>
-  </div>
-</div>
-<!-- Modal End 5 -->
-
-
-  <!-- back to top  -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-
-
-  <!-- Footer Menu Start -->
-
-  <div class="fixed-bottom d-none displayblockmobile" style="background: white; border-top: 1px solid #D1D5DB;">
-    <div class="row">
-      
-      <div class="footermenudiv">
-        <a href="Profile.html" class="text-decoration-none text-black" aria-current="true">
-        <i class="fa fa-user mb-2 sizefoooter"></i>
-        <p>My Account</p>
-      </a>
-      </div>
-
-      <div class="footermenudiv">
-        <a href="Games.html" class="text-decoration-none text-black activeYellow" aria-current="true">
-        <i class="fa fa-gamepad mb-2 sizefoooter"></i>
-        <p>Games</p>
-      </a>
-      </div>
-      <div class="footermenudiv">
-        <a href="Settings.html" class="text-decoration-none text-black" aria-current="true">
-        <i class="fa fa-gear mb-2 sizefoooter"></i>
-        <p>Settings</p>
-      </a>
+        </div>
       </div>
     </div>
-  </div>
+    <!-- Modal End 5 -->
 
-  <!-- Footer Menu End -->
+    <!-- back to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
 
-  <!-- <footer class="footer p-3 footerBackground mt-auto zindexback">
+    <!-- Footer Menu Start -->
+
+    <div
+      class="fixed-bottom d-none displayblockmobile"
+      style="background: white; border-top: 1px solid #d1d5db"
+    >
+      <div class="row">
+        <div class="footermenudiv">
+          <a
+            href="/profile"
+            class="text-decoration-none text-black"
+            aria-current="true"
+          >
+            <i class="fa fa-user mb-2 sizefoooter"></i>
+            <p>My Account</p>
+          </a>
+        </div>
+        <div class="footermenudiv">
+          <a
+            href="/games"
+            class="text-decoration-none text-black activeYellow"
+            aria-current="true"
+          >
+            <i class="fa fa-gamepad mb-2 sizefoooter"></i>
+            <p>Games</p>
+          </a>
+        </div>
+        <div class="footermenudiv">
+          <a
+            href="/settings"
+            class="text-decoration-none text-black"
+            aria-current="true"
+          >
+            <i class="fa fa-gear mb-2 sizefoooter"></i>
+            <p>Settings</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Menu End -->
+
+    <!-- <footer class="footer p-3 footerBackground mt-auto zindexback">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -274,24 +389,28 @@
       </div>
     </div>
   </footer> -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const addFriendForm = document.getElementById('addFriendForm');
-    const table = document.getElementById('table1');
-    const totalRow = document.getElementById('totalRow');
-    const addFriendLink = document.querySelector('a[data-bs-target="#exampleModalToggle5"]');
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const addFriendForm = document.getElementById("addFriendForm");
+        const table = document.getElementById("table1");
+        const totalRow = document.getElementById("totalRow");
+        const addFriendLink = document.querySelector(
+          'a[data-bs-target="#exampleModalToggle5"]'
+        );
 
-    // Get the initial total value
-    let total = parseInt(totalRow.querySelector('p').textContent.split(' ')[1]);
+        // Get the initial total value
+        var total = parseInt(
+          totalRow.querySelector("p").textContent.split(" ")[1]
+        );
 
-    addFriendForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
+        addFriendForm.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
 
-        // Get the entered name from the form
-        const name = addFriendForm.querySelector('input[name="name"]').value;
+          // Get the entered name from the form
+          const name = addFriendForm.querySelector('input[name="name"]').value;
 
-        // HTML string for the new row
-        const newRowHTML = `
+          // HTML string for the new row
+          const newRowHTML = `
             <tr class="colorgrey50 d-flex mb-4">
                 <td class="align-items-center justify-content-center w-25 text-end width-100px"> <img src="../images/Avatar Image-1.png" alt=""></td>
                 <td class="d-flex align-items-center width-30 width-40-reponsive">
@@ -306,47 +425,52 @@ document.addEventListener('DOMContentLoaded', function() {
             </tr>
         `;
 
-        // Insert the new row after the existing row with the ID "friendRow"
-        table.querySelector('#friendRow').insertAdjacentHTML('afterend', newRowHTML);
+          // Insert the new row after the existing row with the ID "friendRow"
+          table
+            .querySelector("#friendRow")
+            .insertAdjacentHTML("afterend", newRowHTML);
 
-        // Update the total
-        total += 15;
+          // Update the total
+          total += 15;
 
-        // Update the content of the total row
-        totalRow.querySelector('p').textContent = `Total: ${total} DT`;
+          // Update the content of the total row
+          totalRow.querySelector("p").textContent = `Total: ${total} DT`;
 
-        // Reset the form
-        addFriendForm.reset();
+          // Reset the form
+          addFriendForm.reset();
 
-        // Close the popup modal
-        const modal = document.querySelector('.modal');
-        const modalToggle = bootstrap.Modal.getInstance(modal);
-        modalToggle.hide();
+          // Close the popup modal
+          const modal = document.querySelector(".modal");
+          const modalToggle = bootstrap.Modal.getInstance(modal);
+          modalToggle.hide();
 
-        // Hide the anchor tag
-        addFriendLink.style.display = 'none';
-    });
+          // Hide the anchor tag
+          addFriendLink.style.display = "none";
+        });
 
-    // Attach click event listeners to delete buttons
-    table.addEventListener('click', function(event) {
-        if (event.target.classList.contains('delete-row')) {
-            const row = event.target.closest('tr');
+        // Attach click event listeners to delete buttons
+        table.addEventListener("click", function (event) {
+          if (event.target.classList.contains("delete-row")) {
+            const row = event.target.closest("tr");
             row.remove();
 
             // Update the total when deleting a row
             total -= 15;
-            totalRow.querySelector('p').textContent = `Total: ${total} DT`;
+            totalRow.querySelector("p").textContent = `Total: ${total} DT`;
 
             // Show the anchor tag when a row is deleted
-            addFriendLink.style.display = 'block';
-        }
-    });
-});
+            addFriendLink.style.display = "block";
+          }
+        });
+      });
+    </script>
 
-
-</script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src=" ../scripts/main.js"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/main.js"></script>
+  </body>
 </html>

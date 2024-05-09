@@ -1,7 +1,7 @@
 {
     "name": "PlayFast – Quick Match Platform",
     "short_name": "PlayFast",
-    "start_url": "/index.html",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "white",
     "theme_color": "#FFCA00",

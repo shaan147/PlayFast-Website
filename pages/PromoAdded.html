@@ -1,288 +1,421 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Games</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Games</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favion -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href=" ../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href=" ../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href=" ../images/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="manifest" href=" ../images/site.webmanifest"> -->
+    <link rel="manifest" href="../manifest.json" />
+    <style>
+      .hoverEffect:hover {
+        color: #3b3b3b;
+      }
+    </style>
+  </head>
 
-  <!-- Google Font  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- Favion -->
-  <link rel="apple-touch-icon" sizes="180x180" href=" ../images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href=" ../images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href=" ../images/favicon-16x16.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="manifest" href=" ../images/site.webmanifest"> -->
-  <link rel="manifest" href="../manifest.json">
-<style>
-  .hoverEffect:hover{
-    color: #3b3b3b;
-
-  }
-</style>
-</head>
-
-<body class="d-flex flex-column min-vh-100">
-
-  
-  <!-- Sidebar -->
-  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-    <div class="position-sticky">
-      <div class="list-group list-group-flush mx-3 mt-4">
-        <a href="Profile.html" class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
-          <i class="fa fa-user fa-2x mb-2"></i>
-          <h5>My account</h5>
-        </a>
-        <a href="Games.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect activeYellow" aria-current="true">
-          <i class="fa fa-gamepad fa-2x mb-2"></i>
-          <h5>Games</h5>
-        </a>
-        <a href="Settings.html" class=" py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect " aria-current="true">
-          <i class="fa fa-gear fa-2x mb-2"></i>
-          <h5>Settings</h5>
-        </a>
-
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a
+            href="/profile"
+            class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect activeYellow"
+            aria-current="true"
+          >
+            <i class="fa fa-user fa-2x mb-2"></i>
+            <h5>My account</h5>
+          </a>
+          <a
+            href="/games"
+            class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect"
+            aria-current="true"
+          >
+            <i class="fa fa-gamepad fa-2x mb-2"></i>
+            <h5>Games</h5>
+          </a>
+          <a
+            href="/settings"
+            class="py-4 mt-5 ripple text-center align-content-center text-decoration-none text-black hoverEffect"
+            aria-current="true"
+          >
+            <i class="fa fa-gear fa-2x mb-2"></i>
+            <h5>Settings</h5>
+          </a>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Sidebar -->
+    </nav>
+    <!-- Sidebar -->
 
-
-   <!-- Navbar Start  -->
-   <nav class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="../images/playfast-logo.png" class="navbarlogo" alt=""></a>
-      <div class="nav-item dropdown d-none" id="showhide">
-        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="coloryellow">EN</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">FR</a></li>
-          <!-- <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-        </ul>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <!-- Updated class -->
-        <ul class="navbar-nav  mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="Matches.html">Matches</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Aboutus.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Contactus.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="Term.html">Terms & Conditions</a>
-          </li>
-          <li class="nav-item">
-            <a class=" btn btn-primary px-3" href="Signup.html">Join Now</a>
-          </li>
-        
-        </ul>
-      </div>
-      <div class="float-end" id="notshow">
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <!-- Navbar Start  -->
+    <nav
+      class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="../images/playfast-logo.png" class="navbarlogo" alt=""
+        /></a>
+        <div class="nav-item dropdown d-none" id="showhide">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="coloryellow">EN</span>
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">FR</a></li>
             <!-- <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
         </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <!-- Updated class -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/matches">Matches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/terms">Terms & Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary px-3" href="/signup">Join Now</a>
+            </li>
+          </ul>
+        </div>
+        <div class="float-end" id="notshow">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="coloryellow">EN</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">FR</a></li>
+              <!-- <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Navbar End  -->
+    </nav>
+    <!-- Navbar End  -->
+    <main style="margin-bottom: 80px" class="mt-90px">
+      <div class="row d-flex flex-row">
+        <div class="container pt-4 padding-0">
+          <!-- setion start  -->
+          <div class="pt-5 col-9">
+            <div class="row align-items-center mb-4">
+              <div class="table-responsive overflox-x-hidden">
+                <table class="table" id="transactionTable">
+                  <tbody>
+                    <tr class="colorgrey50 d-flex mb-4">
+                      <td
+                        class="align-items-center justify-content-center w-50 width-200px"
+                      >
+                        Court loc 2
+                        <p class="mb-0 medium22">Outdoor 6 vs 6</p>
+                        <p class="mb-0">Monday,10 September at 19:00</p>
+                      </td>
 
+                      <td
+                        class="d-flex align-items-center justify-content-center w-50"
+                      >
+                        <img src="../images/court.png" alt="" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row mt-5 px-5 padding-0">
+              <div class="table-responsive overflox-x-hidden">
+                <table class="table" id="transactionTable">
+                  <tbody>
+                    <tr class="colorgrey50 d-flex mb-4">
+                      <td
+                        class="align-items-center justify-content-center w-25 text-end width-100px"
+                      >
+                        <img src="../images/Avatar Image-1.png" alt="" />
+                      </td>
+                      <td
+                        class="d-flex align-items-center width-30 width-40-reponsive"
+                      >
+                        <p class="ms-4 mb-0 medium22 text-left">
+                          Michael Johnson
+                        </p>
+                      </td>
+                      <td
+                        class="d-flex align-items-center justify-content-center w-25"
+                      >
+                        <p class="mb-0">15 DT/15DT</p>
+                      </td>
+                    </tr>
+                    <tr class="colorgrey50 d-flex mb-4">
+                      <td
+                        class="align-items-center justify-content-center w-25 text-end width-100px"
+                      >
+                        <img src="../images/Avatar Image-2.png" alt="" />
+                      </td>
+                      <td
+                        class="d-flex align-items-center width-30 width-40-reponsive"
+                      >
+                        <p class="ms-4 mb-0 medium22 text-left">
+                          Michael Johnson
+                        </p>
+                      </td>
+                      <td
+                        class="d-flex align-items-center justify-content-center w-25"
+                      >
+                        <p class="mb-0">15 DT/15DT</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row px-5 paddingxy-0px">
+              <p class="mb-0 medium22 text-center">
+                PROMO CODE ADDED SUCESSFULLY (Value = 5DT)
+              </p>
+            </div>
+            <hr />
+            <div class="row p-4 mb-5">
+              <div class="col-12 text-center">
+                <div
+                  class="btn btn-primary"
+                  onclick="showModal('exampleModalToggle4')"
+                >
+                  Play
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  <main style=" margin-bottom: 80px;" class="mt-90px">
-    <div class="row d-flex flex-row">
-    <div class="container pt-4 padding-0">
-  <!-- setion start  -->
+    <!-- Modal Start 4 -->
 
-  
-
-    <div class="pt-5 col-9">
-      <div class="row align-items-center mb-4">
-          <div class="table-responsive overflox-x-hidden">
-            <table class="table" id="transactionTable">
-              <tbody>
-                <tr class="colorgrey50 d-flex mb-4">
-                  <td class=" align-items-center justify-content-center w-50 width-200px"> Court loc 2
-                    <p class=" mb-0 medium22">Outdoor 6 vs 6</p>
-                    <p class="mb-0">Monday,10 September at 19:00</p>
-                  </td>
-              
-          
-                  <td class="d-flex align-items-center justify-content-center w-50"> <img src="../images/court.png" alt=""></td>
-                </tr>
-       
-
-              </tbody>
-            </table>
+    <div
+      class="modal fade"
+      id="exampleModalToggle4"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel4"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 backgroundYellow">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
 
-       
-      </div>
-      <div class="row mt-5 px-5 padding-0">
-        <div class="table-responsive overflox-x-hidden">
-          <table class="table" id="transactionTable">
-            <tbody>
-              <tr class="colorgrey50 d-flex mb-4">
-                <td class=" align-items-center justify-content-center w-25 text-end width-100px">       <img src="../images/Avatar Image-1.png" alt=""></td>
-                <td class="d-flex align-items-center  width-30 width-40-reponsive">  <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p></td>
-                <td class="d-flex align-items-center justify-content-center w-25">  <p class="mb-0">15 DT/15DT</p></td>
-              </tr>
-              <tr class="colorgrey50 d-flex mb-4">
-                <td class=" align-items-center justify-content-center w-25 text-end width-100px">       <img src="../images/Avatar Image-2.png" alt=""></td>
-                <td class="d-flex align-items-center  width-30 width-40-reponsive">  <p class="ms-4 mb-0 medium22 text-left">Michael Johnson</p></td>
-                <td class="d-flex align-items-center justify-content-center w-25">  <p class="mb-0">15 DT/15DT</p></td>
-              </tr>
-         
-            </tbody>
-          </table>
+          <div class="modal-body px-5 text-center mb-5">
+            <p>
+              You have credit in your account balance, do you want to use your
+              credit?
+            </p>
+            <div class="d-flex justify-content-center">
+              <button
+                class="btn m-0 bg-white borderGrey"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                No
+              </button>
+              <button
+                class="btn m-0 btn-primary border-white"
+                data-bs-target="#exampleModalToggle5"
+                data-bs-toggle="modal"
+              >
+                Yes
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-  <div class="row px-5 paddingxy-0px">
-<p class="mb-0 medium22 text-center">PROMO CODE ADDED SUCESSFULLY (Value = 5DT)</p>
-  </div>
-  <hr>
-  <div class="row p-4 mb-5">
-    <div class="col-12 text-center">
-     <a class="btn btn-primary" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal">Play</a>
-
     </div>
-  </div>
-    
 
+    <!-- Modal End  4 -->
 
-      </div>
+    <!-- Modal Start 5 -->
 
+    <div
+      class="modal fade"
+      id="exampleModalToggle5"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel5"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <form>
+          <div class="modal-content rounded-4 backgroundYellow">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
 
-
-
-    </div>
-  </div>
-</div>
-</main>
-
-
-<!-- Modal Start 4 -->
-
-<div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    
-    <div class="modal-content rounded-4 backgroundYellow">
-      <div class="modal-header  border-0">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-  
-      <div class="modal-body px-5 text-center mb-5">
-        <p>You have credit in your account balance, do you want to use your
-          credit?</p>
-        <div class="d-flex justify-content-center">
-          <button class="btn m-0 bg-white borderGrey" data-bs-dismiss="modal" aria-label="Close">No</button>
-          <button class="btn m-0 btn-primary border-white" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal" >Yes</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Modal End  4 -->
-
-      <!-- Modal Start 5 -->
-
-      <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <form action="PromoCreditAdded.html" action="POST">
-
-            <div class="modal-content rounded-4  backgroundYellow">
-              <div class="modal-header  border-0">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              
-              <div class="modal-body px-5 text-center mb-5">
-                <p>You have 30DT game credits in your account, please enter the amount you want to use</p>
+            <div class="modal-body px-5 text-center mb-5">
+              <p>
+                You have 30DT game credits in your account, please enter the
+                amount you want to use
+              </p>
               <div class="row justify-content-center">
-
                 <div class="col-5 text-end pe-0 widtghfix">
-                  <input type="text" class="form-control bg-transparent login-form-control1  ">
-                  
+                  <input
+                    type="text"
+                    class="form-control bg-transparent login-form-control1"
+                  />
                 </div>
-                
+
                 <div class="col-2 width20fix">
-                  <p style="font-size: 22px; font-weight: 500;">DT</p>
+                  <p style="font-size: 22px; font-weight: 500">DT</p>
                 </div>
               </div>
               <div class="d-flex justify-content-center pt-3">
-                
-                <button class="btn m-0 bg-white borderGrey" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Validate</button>
+                <a href="/promocreditadded"
+                  ><button
+                    class="btn m-0 bg-white borderGrey"
+                    data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal"
+                  >
+                    Validate
+                  </button></a
+                >
               </div>
             </div>
-          </form>
-            
           </div>
-        </div>
-      </div>
-    
-      <!-- Modal End  5 -->
-
-  <!-- setion end  -->
-
-
-  <!-- back to top  -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-
-
-  <!-- Footer Menu Start -->
-
-  <div class="fixed-bottom d-none displayblockmobile" style="background: white; border-top: 1px solid #D1D5DB;">
-    <div class="row">
-      
-      <div class="footermenudiv">
-        <a href="Profile.html" class="text-decoration-none text-black" aria-current="true">
-        <i class="fa fa-user mb-2 sizefoooter"></i>
-        <p>My Account</p>
-      </a>
-      </div>
-
-      <div class="footermenudiv">
-        <a href="Games.html" class="text-decoration-none text-black activeYellow" aria-current="true">
-        <i class="fa fa-gamepad mb-2 sizefoooter"></i>
-        <p>Games</p>
-      </a>
-      </div>
-      <div class="footermenudiv">
-        <a href="Settings.html" class="text-decoration-none text-black" aria-current="true">
-        <i class="fa fa-gear mb-2 sizefoooter"></i>
-        <p>Settings</p>
-      </a>
+        </form>
       </div>
     </div>
-  </div>
 
-  <!-- Footer Menu End -->
+    <!-- Modal End  5 -->
 
-  <!-- <footer class="footer p-3 footerBackground mt-auto zindexback">
+    <!-- setion end  -->
+
+    <!-- back to top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer Menu Start -->
+
+    <div
+      class="fixed-bottom d-none displayblockmobile"
+      style="background: white; border-top: 1px solid #d1d5db"
+    >
+      <div class="row">
+        <div class="footermenudiv">
+          <a
+            href="/profile"
+            class="text-decoration-none text-black"
+            aria-current="true"
+          >
+            <i class="fa fa-user mb-2 sizefoooter"></i>
+            <p>My Account</p>
+          </a>
+        </div>
+        <div class="footermenudiv">
+          <a
+            href="/games"
+            class="text-decoration-none text-black activeYellow"
+            aria-current="true"
+          >
+            <i class="fa fa-gamepad mb-2 sizefoooter"></i>
+            <p>Games</p>
+          </a>
+        </div>
+        <div class="footermenudiv">
+          <a
+            href="/settings"
+            class="text-decoration-none text-black"
+            aria-current="true"
+          >
+            <i class="fa fa-gear mb-2 sizefoooter"></i>
+            <p>Settings</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Menu End -->
+
+    <!-- <footer class="footer p-3 footerBackground mt-auto zindexback">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -292,8 +425,11 @@
     </div>
   </footer> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src=" ../scripts/main.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src=" ../scripts/main.js"></script>
+  </body>
 </html>
