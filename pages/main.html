@@ -1,258 +1,228 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Play Fast</title>
-  </head>
-  <body>
-    <div id="home-page" class="main">
-      <!-- home slider -->
-      <nav
-        class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/"
-            ><img src="images/playfast-logo.png" class="navbarlogo" alt=""
-          /></a>
-          <div class="nav-item dropdown d-none" id="showhide">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Play Fast</title>
+</head>
+
+<body>
+  <div id="home-page" class="main">
+    <!-- home slider -->
+
+    <nav class="navbar navbar-expand-lg padding-122 zindexback fixed-top shadow-fix-mobile">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="images/playfast-logo.png" class="navbarlogo" alt="" /></a>
+        <div class="nav-item dropdown d-none" id="showhide">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="coloryellow">FR</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">EN</a></li>
+            <!-- <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+        </div>
+      <!-- Navbar icon Start  -->
+      <div class="navbar-toggler fa fa-bars" style="color: black !important; font-size: 26px;"  id="togglebtn" onclick="toggleNavbar()">
+      </div>
+      <div class="navbar-toggler" style="display: none;" id="togglebtnClose" onclick="toggleNavbarClose()">
+        <i class="fa fa-times" style="color: black; font-size: 26px;"></i>
+      </div>
+      <!-- Navbar icon End  -->
+        <div class="collapse navbar-collapse justify-content-center"  id="navbarSupportedContent">
+          <!-- Updated class -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/matches">Matchs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">À Propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/terms">Conditions Générales</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary px-3" href="/signup">Jouer</a>
+            </li>
+          </ul>
+        </div>
+        <div class="float-end" id="notshow">
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <span class="coloryellow">EN</span>
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">FR</a></li>
               <!-- <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            </ul>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarSupportedContent"
-          >
-            <!-- Updated class -->
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/matches">Matches</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/terms">Terms & Conditions</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-primary px-3" href="/signup">Join Now</a>
-              </li>
-            </ul>
-          </div>
-          <div class="float-end" id="notshow">
-            <div class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span class="coloryellow">EN</span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">FR</a></li>
-                <!-- <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-              </ul>
-            </div>
+            </ul>
           </div>
         </div>
-      </nav>
-      <!-- Navbar End  -->
-      <!-- Herosection Start  -->
-      <div class="mb-5 position-relative mt-90px">
-        <img src="./images/herosection.png" class="w-100" alt="" />
-        <div
-          class="position-absolute top-50 start-50 translate-middle text-center text-white top-70-fix"
-        >
-          <h1 class="text-shadow headingbigres">Big Heading</h1>
-          <p class="fs-2 text-shadow headingparares">
-            Lorem ipsum dolor sit amet
+      </div>
+    </nav>
+    <!-- Navbar End  -->
+    <!-- Herosection Start  -->
+    <div class="mb-5 position-relative mt-90px">
+      <img src="./images/herosection.png" class="w-100" alt="" />
+      <div class="position-absolute top-50 start-50 translate-middle text-center text-white top-70-fix">
+        <h1 class="text-shadow headingbigres">Click, Play, Have Fun</h1>
+        <p class="fs-2 text-shadow headingparares">
+          Plus besoin de réunir toute l'équipe. PlayFast vous permet de jouer directement à des Matchs de Football,
+          Padel, Tennis, et Basketball.
+
+        </p>
+      </div>
+    </div>
+    <!-- Herosection End  -->
+    <div class="text-center align-content-center mb-5 px-2">
+      <p class="mb-5">
+        Nous vous offrons la possibilité de pratiquer le sport que vous aimez quand et où vous le souhaitez. Télécharger
+        maintenant notre application et commencer à jouer.
+
+      </p>
+      <!-- <a href="#" class="btn btn-primary">Get Started</a> -->
+      <button id="downloadAndroidApp" class="btn btn-primary mb-4">
+        Télécharger APP <i class="fa fa-android ps-1"></i>
+      </button>
+
+      <button id="downloadiOSApp" class="btn btn-primary mb-4" onclick="showModal('iosModal')">
+        Télécharger APP <i class="fa fa-apple ps-1"></i>
+      </button>
+    </div>
+<!-- Modal Start -->
+<div class="modal fade" id="iosModal" aria-hidden="true"
+  aria-labelledby="iosModalLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4" style="background: #FFCA00;">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-5 text-center mb-4 border-0"  style="color: black;">
+        <h4>How to Add the App to Your Home Screen</h4>
+        <p>1. Open the 'Share' menu from your browser's options.</p>
+        <p>2. Tap 'Add to Home Screen' and follow the prompts.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal End -->
+    <!-- setion start  -->
+    <div class="backgroundYellow p-xxl-5 mb-3">
+      <div class="row justify-content-center align-items-center mb-50 rowreverse">
+        <div class="col-6 padingb0">
+          <p>
+            Ne manquez pas l'occasion de vous divertir et de vous connecter avec d'autres joueurs dans votre ville!
+            <br />
+            <br />
+            Peu importe que vous soyez un joueur débutant de football ou un professionnel du tennis, "Play Fast" a un
+            match pour vous !
+
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="mx-auto text-center">
+            <img src="./images/section1.png" class="fixImage" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center my-5">
+        <div class="col-6 pading0">
+          <div class="mx-auto text-center">
+            <img src="./images/section2.png" class="fixImage" alt="" />
+          </div>
+        </div>
+        <div class="col-6">
+          <p>
+            Nous sommes ravis de vous compter parmi nous. En tant que membre de notre communauté, vous aurez
+            l'opportunité de :
+            <br />
+            <br />
+            - Découvrir de nouveaux jeux à jouer chaque jour, directement dans votre quartier.
+            <br />
+            - Rencontrer d'autres personnes qui partagent votre passion pour le plaisir et les jeux.
+            <br />
+            - Créer des souvenirs inoubliables qui dureront toute votre vie.
           </p>
         </div>
       </div>
-      <!-- Herosection End  -->
-      <div class="text-center align-content-center mb-5 px-2">
-        <p class="mb-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit
-          nibh ligula, dictum iaculis velit blandit auctor. Nullam euismod id
-          mauris in viverra
-        </p>
-        <!-- <a href="#" class="btn btn-primary">Get Started</a> -->
-        <button id="downloadAndroidApp" class="btn btn-primary">
-          Download APP <i class="fa fa-android"></i>
-        </button>
-      </div>
-
-      <!-- setion start  -->
-      <div class="backgroundYellow p-xxl-5 mb-3">
-        <div
-          class="row justify-content-center align-items-center mb-50 rowreverse"
-        >
-          <div class="col-6 padingb0">
-            <p>
-              Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat
-              volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae
-              mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque
-              scelerisque mi non urna condimentum, nec commodo massa euismod
-            </p>
-          </div>
-          <div class="col-6">
-            <div class="mx-auto text-center">
-              <img src="./images/section1.png" class="fixImage" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center align-items-center my-5">
-          <div class="col-6 pading0">
-            <div class="mx-auto text-center">
-              <img src="./images/section2.png" class="fixImage" alt="" />
-            </div>
-          </div>
-          <div class="col-6">
-            <p>
-              Maecenas in felis ultricies, mollis eros a, convallis metus. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat
-              volutpat. Cras sit amet ornare augue, vel eleifend sem. Cras vitae
-              mauris convallis, tincidunt nisl iaculis, tincidunt urna. Quisque
-              scelerisque mi non urna condimentum, nec commodo massa euismod
-            </p>
-          </div>
+    </div>
+    <!-- setion end  -->
+    <div class="row justify-content-center mt-5" style="margin-bottom: 100px">
+      <div class="col-6 px-0 d-flex justify-content-center align-items-center">
+        <div class="col-6 position-relative px-0">
+          <h1 class="text-center">Contactez nous</h1>
+          <ol class="padding6">
+            <li>Partneriats</li>
+            <li>Problèmes de jeu</li>
+            <li>Suppression de compte</li>
+            <li>etc</li>
+          </ol>
         </div>
       </div>
-      <!-- setion end  -->
-      <div class="row justify-content-center mt-5" style="margin-bottom: 100px">
-        <div
-          class="col-6 px-0 d-flex justify-content-center align-items-center"
-        >
-          <div class="col-6 position-relative px-0">
-            <h1 class="text-center">Get in touch</h1>
-            <ol class="padding6">
-              <li>Partnership opportunities</li>
-              <li>Game issues</li>
-              <li>Deleting accounts</li>
-              <li>etc</li>
-            </ol>
+      <div class="col-6 px-0">
+        <form class="col-8 me-auto ms-auto px-0">
+          <div class="row mb-4">
+            <div class="width-50fix">
+              <input type="text" class="form-control poppines" id="firstName" placeholder="Prénom" />
+            </div>
+            <div class="width-50fix">
+              <input type="text" class="form-control poppines" id="lastName" placeholder="Nom" />
+            </div>
           </div>
-        </div>
-        <div class="col-6 px-0">
-          <form class="col-8 me-auto ms-auto px-0">
-            <div class="row mb-4">
-              <div class="width-50fix">
-                <input
-                  type="text"
-                  class="form-control poppines"
-                  id="firstName"
-                  placeholder="First Name"
-                />
-              </div>
-              <div class="width-50fix">
-                <input
-                  type="text"
-                  class="form-control poppines"
-                  id="lastName"
-                  placeholder="Last Name"
-                />
-              </div>
-            </div>
-            <div class="mb-4">
-              <input
-                type="email"
-                class="form-control poppines"
-                id="email"
-                placeholder="Email"
-              />
-            </div>
-            <div class="mb-4">
-              <input
-                type="phone"
-                class="form-control poppines"
-                id="phone"
-                placeholder="Phone Number"
-              />
-            </div>
-            <div class="mb-4">
-              <input
-                type="text"
-                class="form-control poppines"
-                id="city"
-                placeholder="City"
-              />
-            </div>
-            <textarea
-              name="yourMessage"
-              class="form-control poppines"
-              id="yourMessage"
-              placeholder="Your Message"
-              cols="30"
-              rows="6"
-            ></textarea>
+          <div class="mb-4">
+            <input type="email" class="form-control poppines" id="email" placeholder="Email" />
+          </div>
+          <div class="mb-4">
+            <input type="phone" class="form-control poppines" id="phone" placeholder="Téléphone" />
+          </div>
+          <div class="mb-4">
+            <input type="text" class="form-control poppines" id="city" placeholder="Ville" />
+          </div>
+          <textarea name="yourMessage" class="form-control poppines" id="yourMessage" placeholder="Votre message"
+            cols="30" rows="6"></textarea>
 
-            <div class="text-start my-5 txenter">
-              <!-- Added text-center class -->
-              <button class="btn btn-primary">Submit</button>
-            </div>
-          </form>
-        </div>
+          <div class="text-start my-5 txenter">
+            <!-- Added text-center class -->
+            <button class="btn btn-primary">Envoyer</button>
+          </div>
+        </form>
       </div>
-
-      <!-- back to top  -->
-
-      <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fa fa-arrow-up"></i>
-      </button>
-
-      <footer class="footer p-3 footerBackground mt-auto">
-        <!-- Use mt-auto to push the footer to the bottom -->
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <p class="mb-0">
-                Copyright © 2023 All Rights Reserved Developed by PlayFast
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./scripts/main.js"></script>
-  </body>
+    <!-- back to top  -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <footer class="footer p-3 footerBackground mt-auto">
+      <!-- Use mt-auto to push the footer to the bottom -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              Copyright © 2023 All Rights Reserved Developed by PlayFast
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/main.js"></script>
+
+</body>
+
 </html>

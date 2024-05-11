@@ -142,6 +142,7 @@ function showModal(modalId) {
   modalToggle.show();
 }
 
+
 document.querySelectorAll("form").forEach((form) => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -150,3 +151,42 @@ document.querySelectorAll("form").forEach((form) => {
     console.log(data);
   });
 });
+
+
+
+function toggleNavbar() {
+  var navbarSupportedContent = document.getElementById("navbarSupportedContent");
+  navbarSupportedContent.classList.remove("collapse");
+  var togglebtnClose = document.getElementById("togglebtnClose");
+  var togglebtn = document.getElementById("togglebtn");
+  togglebtn.style.display = "none";
+  togglebtnClose.style.display = "block";
+}
+
+function toggleNavbarClose() {
+var navbarSupportedContent = document.getElementById("navbarSupportedContent");
+navbarSupportedContent.classList.add("collapse");
+var togglebtnClose = document.getElementById("togglebtnClose");
+var togglebtn = document.getElementById("togglebtn");
+togglebtn.style.display = "block";
+togglebtnClose.style.display = "none";
+}
+
+
+document.addEventListener("click", function(event) {
+var navbarSupportedContent = document.getElementById("navbarSupportedContent");
+// Check if the clicked element is not inside the navbar or is not the toggle button
+if (!navbarSupportedContent.contains(event.target) && event.target.id !== "togglebtn") {
+  // Close the navbar
+  toggleNavbarClose();
+}
+});
+
+if ("serviceWorker" in navigator) {
+	window.addEventListener("load", function () {
+		navigator.serviceWorker
+			.register("/scripts/serviceWorker.js")
+			.then(res => console.log("service worker registered"))
+			.catch(err => console.log("service worker not registered", err));
+	});
+}

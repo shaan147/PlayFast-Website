@@ -124,7 +124,10 @@ div#transactionTable_info {
   left: 49%;
   padding: 9px 14px;
 }
-
+.aboutdivs {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
 .navbarlogo {
   width: 63px;
 }
@@ -370,6 +373,9 @@ div#transactionTable_info {
 .form-check-input:checked {
   background-color: transparent !important;
 }
+.displayNavbarNone{
+  display: none;
+}
 .form-check-input:focus {
   border-color: #86b7fe;
   outline: 0;
@@ -381,6 +387,12 @@ div#transactionTable_info {
 }
 
 @media (max-width: 650px) {
+  .aboutdivs {
+    width: 100%;
+}
+.displayNavbarNone{
+  display: block;
+}
   .detailsimagesset {
     width: 60px;
     float: none;
