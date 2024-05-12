@@ -173,14 +173,35 @@ togglebtnClose.style.display = "none";
 }
 
 
-document.addEventListener("click", function(event) {
-var navbarSupportedContent = document.getElementById("navbarSupportedContent");
-// Check if the clicked element is not inside the navbar or is not the toggle button
-if (!navbarSupportedContent.contains(event.target) && event.target.id !== "togglebtn") {
-  // Close the navbar
-  toggleNavbarClose();
+// Function to handle clicks
+function handleClick(event) {
+  var navbarSupportedContent = document.getElementById("navbarSupportedContent");
+  // Check if the clicked element is not inside the navbar or is not the toggle button
+  if (!navbarSupportedContent.contains(event.target) && event.target.id !== "togglebtn") {
+    // Close the navbar
+    toggleNavbarClose();
+  }
 }
-});
+
+// Check if screen width is 550px or less
+var mediaQuery = window.matchMedia("(max-width: 550px)");
+
+// Function to handle media query change
+function handleMediaQueryChange(mediaQuery) {
+  if (mediaQuery.matches) {
+    // If screen width is 550px or less, attach the event listener
+    document.addEventListener("click", handleClick);
+  } else {
+    // If not, remove the event listener
+    document.removeEventListener("click", handleClick);
+  }
+}
+
+// Call the function to check screen width initially
+handleMediaQueryChange(mediaQuery);
+
+// Attach listener for changes in screen width
+mediaQuery.addListener(handleMediaQueryChange);
 
 if ("serviceWorker" in navigator) {
 	window.addEventListener("load", function () {

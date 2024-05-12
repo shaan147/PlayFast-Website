@@ -385,14 +385,25 @@ div#transactionTable_info {
   float: left;
   margin-left: -2.5em !important;
 }
-
+#mobilescreen{
+  display: none;
+}
+@media (max-width: 500px) {
+  .displayNavbarNone{
+    display: block;
+  }
+}
 @media (max-width: 650px) {
   .aboutdivs {
     width: 100%;
 }
-.displayNavbarNone{
+#mobilescreen{
   display: block;
 }
+#Laptopscreen{
+  display: none;
+}
+
   .detailsimagesset {
     width: 60px;
     float: none;
@@ -410,6 +421,10 @@ div#transactionTable_info {
   .breaklinefix {
     white-space: pre;
     font-size: 12px !important;
+  }
+
+  .breaklinefix1 {
+    font-size: 11px !important;
   }
 
   .footermenudiv p {
